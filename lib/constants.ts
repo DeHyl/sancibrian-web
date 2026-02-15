@@ -123,23 +123,35 @@ export const CABIN_SPECS = {
   images: [
     {
       url: "/images/cabin/exterior.jpg",
-      alt: "The Captain's Cabin exterior view",
+      alt: "The Captain's Cabin exterior with tropical garden",
     },
     {
       url: "/images/cabin/room-1.jpg",
-      alt: "Bedroom with ocean view",
+      alt: "Loft bedroom with vintage aviation art and mountain view",
     },
     {
       url: "/images/cabin/room-2.jpg",
-      alt: "Comfortable queen beds",
+      alt: "Living area with TV, vintage propeller decor and loft",
     },
     {
       url: "/images/cabin/room-3.jpg",
-      alt: "Spacious cabin interior",
+      alt: "Full cabin interior with both beds and wooden ladder",
     },
     {
       url: "/images/cabin/room-4.jpg",
-      alt: "Modern amenities",
+      alt: "Loft bedroom wide angle with mountain views",
+    },
+    {
+      url: "/images/cabin/terrace.jpg",
+      alt: "Couple enjoying the cabin terrace surrounded by tropical plants",
+    },
+    {
+      url: "/images/cabin/bunk-bed.jpg",
+      alt: "Lower queen bed with bunk bed above",
+    },
+    {
+      url: "/images/cabin/lower-bed.jpg",
+      alt: "Ground floor queen bed with loft access ladder",
     },
   ],
 };
@@ -176,7 +188,7 @@ export const GALLERY_IMAGES = [
   },
   {
     url: "/images/cabin/room-1.jpg",
-    alt: "The Captain's Cabin interior",
+    alt: "Loft bedroom with vintage aviation art",
   },
   {
     url: "/images/sapzurro/beach-2.jpg",
@@ -195,8 +207,8 @@ export const GALLERY_IMAGES = [
     alt: "Traditional Colombian breakfast",
   },
   {
-    url: "/images/hero/hero-2.jpg",
-    alt: "Sunset at Cabaña Sancibrian",
+    url: "/images/cabin/terrace.jpg",
+    alt: "Guests enjoying the cabin terrace",
   },
   {
     url: "/images/sapzurro/path.jpg",
