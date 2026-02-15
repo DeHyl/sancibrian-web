@@ -168,12 +168,12 @@ export const HANGAR_CAFE = {
     "Comfortable workspace",
     "Ocean view terrace",
   ],
-  image: "/images/cafe/interior-1.jpg",
+  image: "/images/cafe/exterior-1.avif",
   images: [
+    "/images/cafe/exterior-1.avif",
+    "/images/cafe/exterior-2.avif",
     "/images/cafe/interior-1.jpg",
     "/images/cafe/interior-2.jpg",
-    "/images/cafe/interior-3.jpg",
-    "/images/cafe/patio.jpg",
   ],
 };
 
@@ -191,8 +191,8 @@ export const GALLERY_IMAGES = [
     alt: "Crystal clear Caribbean waters",
   },
   {
-    url: "/images/cafe/interior-1.jpg",
-    alt: "Hangar Café coworking space",
+    url: "/images/cafe/exterior-1.avif",
+    alt: "Hangar Café exterior with bougainvillea",
   },
   {
     url: "/images/sapzurro/beach-3.jpg",
@@ -382,4 +382,5 @@ export const BOOKING_CTA = {
   airbnbText: "Book on Airbnb",
   bookingText: "Book on Booking.com",
   directBookingNote: "Direct booking = Best price",
+  cryptoNote: "We accept crypto payments via Solana",
 };
