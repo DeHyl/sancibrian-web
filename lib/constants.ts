@@ -179,10 +179,6 @@ export const HANGAR_CAFE = {
 
 export const GALLERY_IMAGES = [
   {
-    url: "/images/hero/hero-1.jpg",
-    alt: "Cabaña Sancibrian beachfront",
-  },
-  {
     url: "/images/sapzurro/beach-1.jpg",
     alt: "Sapzurro beach paradise",
   },
