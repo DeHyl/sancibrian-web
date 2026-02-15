@@ -33,9 +33,9 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="-mb-4 mt-44 flex justify-center"
+            className="-mb-4 mt-44 md:mt-8 flex justify-center"
           >
-            <div className="relative w-[300px] h-[300px]">
+            <div className="relative w-[300px] h-[300px] md:w-[220px] md:h-[220px]">
               <Image
                 src="/images/logo-white.png"
                 alt="Cabaña Sancibrian"
@@ -47,7 +47,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-perla text-shadow-lg mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-perla text-shadow-lg mb-4 md:mb-3"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -56,7 +56,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-arena font-medium text-shadow mb-4"
+            className="text-xl md:text-2xl text-arena font-medium text-shadow mb-2 md:mb-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -65,7 +65,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.p
-            className="text-base md:text-lg text-arena-light/90 text-shadow max-w-2xl mx-auto mb-4 md:mb-10"
+            className="text-base md:text-lg text-arena-light/90 text-shadow max-w-2xl mx-auto mb-4 md:mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
