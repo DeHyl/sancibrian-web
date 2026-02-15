@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 import { BOOKING_CTA, CONTACT } from "@/lib/constants";
 
 export default function BookingCTA() {
@@ -65,8 +66,8 @@ export default function BookingCTA() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="card p-6 hover:scale-105 transition-transform duration-300 flex flex-col items-center text-center group"
           >
-            <div className="w-16 h-16 bg-[#FF5A5F] rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <span className="text-3xl">🏠</span>
+            <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform overflow-hidden">
+              <Image src="/images/airbnb.png" alt="Airbnb" width={64} height={64} className="object-contain" />
             </div>
             <h3 className="text-xl font-display font-bold text-caribe mb-2">
               {BOOKING_CTA.airbnbText}
@@ -84,8 +85,8 @@ export default function BookingCTA() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="card p-6 hover:scale-105 transition-transform duration-300 flex flex-col items-center text-center group"
           >
-            <div className="w-16 h-16 bg-[#003580] rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <span className="text-3xl">🛏️</span>
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform overflow-hidden">
+              <Image src="/images/booking.png" alt="Booking.com" width={64} height={64} className="object-contain" />
             </div>
             <h3 className="text-xl font-display font-bold text-caribe mb-2">
               {BOOKING_CTA.bookingText}

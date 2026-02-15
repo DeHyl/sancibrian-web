@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CABIN_SPECS, CONTACT, BOOKING_CTA } from "@/lib/constants";
 
+
 export default function CabinPage() {
   return (
     <div className="min-h-screen">
@@ -217,16 +218,18 @@ export default function CabinPage() {
                 href={CONTACT.airbnb}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5"
+                className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5 inline-flex items-center gap-3"
               >
+                <Image src="/images/airbnb.png" alt="" width={28} height={28} className="object-contain" />
                 {BOOKING_CTA.airbnbText}
               </a>
               <a
                 href={CONTACT.booking}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5"
+                className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5 inline-flex items-center gap-3"
               >
+                <Image src="/images/booking.png" alt="" width={28} height={28} className="rounded object-contain" />
                 {BOOKING_CTA.bookingText}
               </a>
             </div>

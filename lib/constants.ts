@@ -313,13 +313,22 @@ export const HOW_TO_GET_THERE = {
   subtitle: "All roads (and boats) lead to Sapzurro",
   routes: [
     {
-      from: "Medellín",
+      from: "Medellín (via Apartadó)",
       steps: [
         "Flight to Apartadó (45 min) or bus (8h)",
         "Shared van to Necoclí (2.5h)",
         "Speedboat to Sapzurro (1.5h)",
       ],
       duration: "~5-6 hours total (by air)",
+    },
+    {
+      from: "Medellín (via Acandí)",
+      steps: [
+        "Flight to Acandí airport (1h)",
+        "Boat from Acandí to Sapzurro (30-40 min)",
+      ],
+      duration: "~2-3 hours total",
+      note: "Fastest route! Limited flight schedules, check availability in advance",
     },
     {
       from: "Bogotá",

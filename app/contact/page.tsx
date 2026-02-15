@@ -151,8 +151,8 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center group"
               >
-                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">
-                  🏠
+                <div className="mb-2 group-hover:scale-110 transition-transform flex justify-center">
+                  <Image src="/images/airbnb.png" alt="Airbnb" width={40} height={40} className="object-contain" />
                 </div>
                 <p className="text-oscuro font-medium text-sm">Airbnb</p>
               </a>
@@ -163,8 +163,8 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center group"
               >
-                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">
-                  🌐
+                <div className="mb-2 group-hover:scale-110 transition-transform flex justify-center">
+                  <Image src="/images/booking.png" alt="Booking.com" width={40} height={40} className="rounded object-contain" />
                 </div>
                 <p className="text-oscuro font-medium text-sm">Booking.com</p>
               </a>
@@ -264,8 +264,9 @@ export default function ContactPage() {
                 href={CONTACT.airbnb}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5"
+                className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5 inline-flex items-center gap-3"
               >
+                <Image src="/images/airbnb.png" alt="" width={28} height={28} className="object-contain" />
                 {BOOKING_CTA.airbnbText}
               </a>
             </div>
