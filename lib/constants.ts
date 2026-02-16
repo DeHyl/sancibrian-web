@@ -122,8 +122,8 @@ export const CABIN_SPECS = {
   ],
   images: [
     {
-      url: "/images/cabin/exterior.jpg",
-      alt: "The Captain's Cabin exterior with tropical garden",
+      url: "/images/cabin/facade-front.jpg",
+      alt: "The Captain's Cabin front facade with palm trees",
     },
     {
       url: "/images/cabin/room-1.jpg",
@@ -134,8 +134,20 @@ export const CABIN_SPECS = {
       alt: "Living area with TV, vintage propeller decor and loft",
     },
     {
+      url: "/images/cabin/bath-outdoor.jpg",
+      alt: "Outdoor bathtub and rain shower with stone details",
+    },
+    {
       url: "/images/cabin/room-3.jpg",
       alt: "Full cabin interior with both beds and wooden ladder",
+    },
+    {
+      url: "/images/cabin/facade-garden.jpg",
+      alt: "Cabin surrounded by tropical garden and palm trees",
+    },
+    {
+      url: "/images/cabin/bath-sink.jpg",
+      alt: "Rustic wooden vanity with outdoor bathtub",
     },
     {
       url: "/images/cabin/room-4.jpg",
@@ -146,12 +158,16 @@ export const CABIN_SPECS = {
       alt: "Couple enjoying the cabin terrace surrounded by tropical plants",
     },
     {
+      url: "/images/cabin/entrance.jpg",
+      alt: "Property entrance with turquoise door and tropical flowers",
+    },
+    {
       url: "/images/cabin/bunk-bed.jpg",
       alt: "Lower queen bed with bunk bed above",
     },
     {
-      url: "/images/cabin/lower-bed.jpg",
-      alt: "Ground floor queen bed with loft access ladder",
+      url: "/images/cabin/bath-detail.jpg",
+      alt: "Bathroom detail with macramé, LED mirror and amenities",
     },
   ],
 };
@@ -172,43 +188,43 @@ export const HANGAR_CAFE = {
   images: [
     "/images/cafe/exterior-1.avif",
     "/images/cafe/exterior-2.avif",
-    "/images/cafe/interior-1.jpg",
-    "/images/cafe/interior-2.jpg",
+    "/images/cafe/coffee.jpg",
+    "/images/food/tropical-dish.jpg",
   ],
 };
 
 export const GALLERY_IMAGES = [
   {
+    url: "/images/sapzurro/aerial-border.jpg",
+    alt: "Aerial view of Sapzurro at the Colombia-Panama border",
+  },
+  {
+    url: "/images/cabin/facade-front.jpg",
+    alt: "The Captain's Cabin front facade",
+  },
+  {
     url: "/images/sapzurro/beach-2.jpg",
     alt: "Sapzurro, Chocó — Crystal clear Caribbean waters",
   },
   {
-    url: "/images/cabin/room-1.jpg",
-    alt: "Loft bedroom with vintage aviation art",
+    url: "/images/cabin/bath-outdoor.jpg",
+    alt: "Outdoor bathtub and rain shower",
   },
   {
-    url: "/images/sapzurro/beach-1.jpg",
-    alt: "Sapzurro beach paradise",
+    url: "/images/sapzurro/playa-bonita-swing.jpg",
+    alt: "Beach swing at Playa Bonita sunset",
   },
   {
-    url: "/images/cafe/exterior-1.avif",
-    alt: "Hangar Café exterior with bougainvillea",
-  },
-  {
-    url: "/images/sapzurro/beach-3.jpg",
-    alt: "Tropical beach view",
-  },
-  {
-    url: "/images/food/breakfast.webp",
-    alt: "Traditional Colombian breakfast",
+    url: "/images/cafe/coffee.jpg",
+    alt: "Colombian coffee at Hangar Café",
   },
   {
     url: "/images/cabin/terrace.jpg",
     alt: "Guests enjoying the cabin terrace",
   },
   {
-    url: "/images/sapzurro/path.jpg",
-    alt: "Path to Cabaña Sancibrian",
+    url: "/images/sapzurro/dock.jpg",
+    alt: "Sapzurro dock with fishing boats",
   },
 ];
 

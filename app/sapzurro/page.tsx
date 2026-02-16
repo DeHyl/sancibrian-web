@@ -12,8 +12,8 @@ export default function SapzurroPage() {
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/sapzurro/beach-1.jpg"
-            alt="Sapzurro Beach"
+            src="/images/sapzurro/aerial-border.jpg"
+            alt="Aerial view of Sapzurro at the Colombia-Panama border"
             fill
             className="object-cover"
             priority
