@@ -121,11 +121,15 @@ export default function ContactPage() {
             {/* Social Media Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <a href={CONTACT.facebookUrl} target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center group">
-                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">📘</div>
+                <div className="mb-2 group-hover:scale-110 transition-transform flex justify-center">
+                  <Image src="/images/facebook.png" alt="Facebook" width={40} height={40} className="object-contain" />
+                </div>
                 <p className="text-oscuro font-medium text-sm">Facebook</p>
               </a>
               <a href={CONTACT.tiktokUrl} target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center group">
-                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">🎵</div>
+                <div className="mb-2 group-hover:scale-110 transition-transform flex justify-center">
+                  <Image src="/images/tiktok.png" alt="TikTok" width={40} height={40} className="object-contain" />
+                </div>
                 <p className="text-oscuro font-medium text-sm">TikTok</p>
               </a>
               <a href={CONTACT.airbnb} target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center group">
