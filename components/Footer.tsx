@@ -127,7 +127,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-caribe hover:bg-caribe-dark text-perla text-center px-4 py-2 rounded-lg transition-colors text-sm font-semibold"
               >
-                <Image src="/images/airbnb.png" alt="" width={20} height={20} className="object-contain" />
+                <Image src="/images/airbnb.png" alt="" width={20} height={20} className="rounded-md object-contain" />
                 Airbnb
               </a>
               <a
