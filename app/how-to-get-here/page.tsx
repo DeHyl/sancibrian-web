@@ -161,15 +161,17 @@ export default function HowToGetHerePage() {
             </p>
 
             <div className="bg-white p-4 rounded-lg shadow-lg">
-              <div className="aspect-video w-full bg-caribe/10 rounded flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-oscuro/60 mb-4">Interactive Map</p>
-                  <p className="text-sm text-oscuro/40 max-w-md mx-auto">
-                    Map integration coming soon. For now, search "Sapzurro, Chocó, Colombia"
-                    on Google Maps to see our exact location.
-                  </p>
-                </div>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253034.5!2d-77.5!3d8.6575831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5122c5595b519d%3A0xf29fde11e3d61eed!2sSapzurro%2C%20Choc%C3%B3!5e0!3m2!1sen!2sco!4v1700000000000!5m2!1sen!2sco"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded w-full"
+                title="Sapzurro location on Google Maps"
+              />
             </div>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
