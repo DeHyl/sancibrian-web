@@ -280,7 +280,7 @@ export const TESTIMONIALS = [
 export const FAQ = [
   {
     question: "How do I get to Sapzurro?",
-    answer: "From Medellín or Bogotá, fly to Apartadó or Montería. Then, ground transport to Turbo or Necoclí (2-3h). Finally, speedboat to Sapzurro (1.5-2h). We can help coordinate all transportation.",
+    answer: "The fastest route is flying to Acandí airport (1h from Medellín), then a short boat ride to Sapzurro (30-40 min). Alternatively, fly to Apartadó or Montería, ground transport to Necoclí (2-3h), then speedboat to Sapzurro (1.5-2h). We can help coordinate all transportation.",
   },
   {
     question: "What's included in my stay?",

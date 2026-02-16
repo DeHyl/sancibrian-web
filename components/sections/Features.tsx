@@ -33,7 +33,7 @@ export default function Features() {
             className={`card p-6 ${
               feature.highlight
                 ? "ring-2 ring-bronze shadow-xl"
-                : ""
+                : "ring-1 ring-arena"
             } hover:scale-105 transition-transform duration-300`}
           >
             <div className="flex items-start gap-3 mb-3">
