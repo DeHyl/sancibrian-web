@@ -179,16 +179,16 @@ export const HANGAR_CAFE = {
 
 export const GALLERY_IMAGES = [
   {
-    url: "/images/sapzurro/beach-1.jpg",
-    alt: "Sapzurro beach paradise",
+    url: "/images/sapzurro/beach-2.jpg",
+    alt: "Sapzurro, Chocó — Crystal clear Caribbean waters",
   },
   {
     url: "/images/cabin/room-1.jpg",
     alt: "Loft bedroom with vintage aviation art",
   },
   {
-    url: "/images/sapzurro/beach-2.jpg",
-    alt: "Crystal clear Caribbean waters",
+    url: "/images/sapzurro/beach-1.jpg",
+    alt: "Sapzurro beach paradise",
   },
   {
     url: "/images/cafe/exterior-1.avif",
