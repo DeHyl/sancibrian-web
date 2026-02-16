@@ -66,7 +66,7 @@ export default function BookingCTA() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="card p-6 hover:scale-105 transition-transform duration-300 flex flex-col items-center text-center group"
           >
-            <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform overflow-hidden">
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform overflow-hidden">
               <Image src="/images/airbnb.png" alt="Airbnb" width={64} height={64} className="object-contain" />
             </div>
             <h3 className="text-xl font-display font-bold text-caribe mb-2">
