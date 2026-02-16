@@ -30,10 +30,8 @@ export default function Features() {
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className={`card p-6 ${
-              feature.highlight
-                ? "ring-2 ring-bronze shadow-xl"
-                : "ring-1 ring-arena"
+            className={`card p-6 ring-2 ring-bronze ${
+              feature.highlight ? "shadow-xl" : ""
             } hover:scale-105 transition-transform duration-300`}
           >
             <div className="flex items-start gap-3 mb-3">
