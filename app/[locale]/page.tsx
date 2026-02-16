@@ -3,6 +3,7 @@ import CaptainStory from "@/components/sections/CaptainStory";
 import Features from "@/components/sections/Features";
 import Gallery from "@/components/sections/Gallery";
 import Testimonials from "@/components/sections/Testimonials";
+import InstagramFeed from "@/components/sections/InstagramFeed";
 import FAQ from "@/components/sections/FAQ";
 import BookingCTA from "@/components/sections/BookingCTA";
 
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Features />
       <Gallery />
       <Testimonials />
+      <InstagramFeed />
       <FAQ />
       <BookingCTA />
     </>

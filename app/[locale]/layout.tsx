@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, CONTACT } from "@/lib/constants";
 import { locales, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { DictionaryProvider } from "@/lib/i18n/DictionaryProvider";
@@ -73,8 +73,53 @@ export default async function LocaleLayout({
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    name: SITE_CONFIG.name,
+    description: dict.site.description,
+    url: `${SITE_CONFIG.url}/${locale}`,
+    telephone: CONTACT.whatsapp,
+    email: CONTACT.email,
+    image: `${SITE_CONFIG.url}/images/hero/hero-1.jpg`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Sapzurro",
+      addressRegion: "Chocó",
+      addressCountry: "CO",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 8.6614,
+      longitude: -77.3636,
+    },
+    starRating: {
+      "@type": "Rating",
+      ratingValue: "5",
+    },
+    amenityFeature: [
+      { "@type": "LocationFeatureSpecification", name: "Starlink WiFi", value: true },
+      { "@type": "LocationFeatureSpecification", name: "24/7 Electricity", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Netflix", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Beachfront", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Outdoor Bathtub", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Café & Coworking", value: true },
+    ],
+    sameAs: [
+      CONTACT.instagramUrl,
+      CONTACT.facebookUrl,
+      CONTACT.tiktokUrl,
+      CONTACT.airbnb,
+      CONTACT.booking,
+    ],
+  };
+
   return (
     <DictionaryProvider dict={dict} locale={locale as Locale}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main className="min-h-screen">{children}</main>
       <Footer />

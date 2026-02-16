@@ -316,6 +316,11 @@
     "allRightsReserved": "Todos los derechos reservados.",
     "inLovingMemory": "En memoria del Capitán Diego Domínguez Escobar"
   },
+  "instagram": {
+    "title": "Sigue Nuestras Aventuras",
+    "subtitle": "Síguenos en Instagram para vistas diarias del paraíso",
+    "followUs": "Seguir @SancibrianSapzurro"
+  },
   "whatsapp": {
     "tooltip": "¡Chatea con nosotros!",
     "ariaLabel": "Contáctanos por WhatsApp"
