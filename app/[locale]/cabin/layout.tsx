@@ -3,7 +3,8 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "The Captain's Cabin | Cabaña Sancibrian",
-  description: "Premium beachfront accommodation in Sapzurro. 4 guests, 40m², Starlink WiFi, 24/7 electricity, outdoor bath, and vintage aviation charm. Perfect for digital nomads.",
+  description:
+    "Premium beachfront accommodation in Sapzurro. 4 guests, 40m², Starlink WiFi, 24/7 electricity, outdoor bath, and vintage aviation charm. Perfect for digital nomads.",
   keywords: [
     "Sapzurro cabin",
     "Captain's Cabin Sapzurro",
@@ -16,7 +17,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "The Captain's Cabin | Cabaña Sancibrian",
-    description: "Premium beachfront accommodation in Sapzurro. 4 guests, 40m², Starlink WiFi, 24/7 electricity, outdoor bath.",
+    description:
+      "Premium beachfront accommodation in Sapzurro. 4 guests, 40m², Starlink WiFi, 24/7 electricity, outdoor bath.",
     url: `${SITE_CONFIG.url}/cabin`,
     images: [
       {
@@ -30,7 +32,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "The Captain's Cabin | Cabaña Sancibrian",
-    description: "Premium beachfront accommodation in Sapzurro with Starlink WiFi and 24/7 electricity.",
+    description:
+      "Premium beachfront accommodation in Sapzurro with Starlink WiFi and 24/7 electricity.",
     images: ["/images/cabin/exterior.jpg"],
   },
 };

@@ -3,11 +3,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { TESTIMONIALS } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function Testimonials() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const { dict } = useDictionary();
+  const t = dict.testimonials;
 
   return (
     <section ref={ref} className="section-container bg-caribe text-perla">
@@ -17,14 +19,14 @@ export default function Testimonials() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="text-perla mb-4">What Our Guests Say</h2>
+        <h2 className="text-perla mb-4">{t.title}</h2>
         <p className="text-xl text-arena-light/80 max-w-3xl mx-auto">
-          Real experiences from travelers and digital nomads who've discovered paradise
+          {t.description}
         </p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {TESTIMONIALS.map((testimonial, index) => (
+        {t.items.map((testimonial: { name: string; location: string; text: string; platform: string }, index: number) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 40 }}
@@ -34,7 +36,7 @@ export default function Testimonials() {
           >
             {/* Stars */}
             <div className="flex gap-1 mb-4">
-              {[...Array(testimonial.rating)].map((_, i) => (
+              {[...Array(5)].map((_, i) => (
                 <span key={i} className="text-bronze text-xl">
                   ★
                 </span>
@@ -43,7 +45,7 @@ export default function Testimonials() {
 
             {/* Quote */}
             <p className="text-arena-light/90 italic mb-6 leading-relaxed">
-              "{testimonial.text}"
+              &ldquo;{testimonial.text}&rdquo;
             </p>
 
             {/* Author */}

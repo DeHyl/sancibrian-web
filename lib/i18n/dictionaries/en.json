@@ -1,0 +1,326 @@
+{
+  "site": {
+    "title": "Cabaña Sancibrian | Your Caribbean Paradise Office in Sapzurro",
+    "description": "Work, play, and unplug at your oasis at the crossroads of continents. Premium beachfront accommodation in Sapzurro with Starlink WiFi, 24/7 electricity, and vintage aviation charm."
+  },
+  "nav": {
+    "home": "Home",
+    "cabin": "The Cabin",
+    "cafe": "Hangar Café",
+    "sapzurro": "Sapzurro",
+    "activities": "Activities",
+    "howToGetHere": "How to Get Here",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "headline": "Disconnect to Reconnect Or Don't. We Have Power & Starlink 24/7",
+    "subheadline": "Your Oasis at the Crossroads of Continents",
+    "description": "Experience the perfect blend of remote work and tropical paradise in Sapzurro, Colombia's hidden gem.",
+    "cta": "Book Your Stay",
+    "ctaSecondary": "Explore The Cabin"
+  },
+  "captainStory": {
+    "title": "A Tribute to Captain Diego Domínguez Escobar",
+    "subtitle": "Where Aviation Legacy Meets Caribbean Paradise",
+    "story": "Cabaña Sancibrian honors the life and legacy of Captain Diego Domínguez Escobar, whose spirit of adventure and exploration lives on in every corner of this beachfront retreat. From vintage propellers to classic aviation posters, the cabin celebrates the golden age of flight while offering modern comforts in one of Colombia's most pristine destinations.",
+    "quote": "\"Adventure is worthwhile in itself.\" - Amelia Earhart"
+  },
+  "features": {
+    "sectionTitle": "The Sancibrian Experience",
+    "sectionDescription": "Where modern amenities meet Caribbean paradise. Everything you need for the perfect remote work retreat.",
+    "featured": "Featured",
+    "items": [
+      { "title": "24/7 Electricity", "description": "Batx battery backup system. One of the few in the entire region with constant power." },
+      { "title": "Starlink Internet", "description": "High-speed satellite connection. Perfect for digital nomads and remote work." },
+      { "title": "Steps from Playa Bonita", "description": "Direct access to the main beach. Wake up to the sound of waves." },
+      { "title": "Outdoor Bath", "description": "Magical flowers and herbs bath at night. A unique experience under the stars." },
+      { "title": "Aviation Theme", "description": "Vintage art and décor paying tribute to Captain Diego's legacy." },
+      { "title": "Hangar Café", "description": "Colombian coffee and coworking space on property, available 24/7." },
+      { "title": "Netflix + Alexa", "description": "Modern amenities in a remote paradise. Entertainment when you need it." },
+      { "title": "Strategic Location", "description": "Perfect stopover for San Blas to Cartagena sailors." }
+    ]
+  },
+  "cabin": {
+    "title": "The Captain's Cabin",
+    "subtitle": "Your Home in Paradise",
+    "capacity": "4 adults",
+    "size": "40m²",
+    "beds": "2 Queen beds",
+    "capacityLabel": "Maximum Capacity",
+    "sizeLabel": "Total Space",
+    "bedsLabel": "Sleeping Arrangements",
+    "whatsIncluded": "What's Included",
+    "gallery": "Gallery",
+    "goodToKnow": "Good to Know",
+    "notIncludedTitle": "What's NOT Included:",
+    "notIncluded": [
+      "Meals (available for purchase at Hangar Café)",
+      "Transportation to/from Sapzurro (we can help coordinate)",
+      "Activities and tours (available locally)"
+    ],
+    "houseRulesTitle": "House Rules:",
+    "houseRules": [
+      "Check-in: 3:00 PM / Check-out: 11:00 AM",
+      "Quiet hours: 10:00 PM - 7:00 AM",
+      "No smoking inside the cabin",
+      "Pets welcome with prior approval",
+      "Please use biodegradable products to protect our reefs"
+    ],
+    "amenities": [
+      "Outdoor shower and magical herb bath",
+      "Starlink satellite internet",
+      "Spacious work desk for remote work",
+      "Netflix and Amazon Alexa",
+      "Premium bedding and comfortable mattresses",
+      "Vintage aviation art and décor",
+      "Hand-curated minibar",
+      "24/7 electricity with battery backup",
+      "Hot water",
+      "Beach access"
+    ]
+  },
+  "cafe": {
+    "title": "Hangar Café",
+    "subtitle": "Fuel Your Adventures",
+    "description": "Premium Colombian coffee, breakfast, and snacks available 24/7 for guests. The perfect coworking space with ocean views.",
+    "open247": "Open 24/7 for Guests",
+    "whatWeOffer": "What We Offer",
+    "theSpace": "The Space",
+    "menuHighlights": "Menu Highlights",
+    "premiumCoffee": "Premium Coffee",
+    "premiumCoffeeDesc": "Cappuccino, espresso, and more from Colombian beans",
+    "freshBreakfast": "Fresh Breakfast",
+    "freshBreakfastDesc": "Local fruits, eggs, arepas, and more",
+    "colombianArepas": "Colombian Arepas",
+    "colombianArepasDesc": "Traditional corn cakes with various fillings",
+    "tropicalFruits": "Tropical Fruits",
+    "tropicalFruitsDesc": "Fresh seasonal fruits from the region",
+    "perfectForRemoteWork": "Perfect for Remote Work",
+    "workAmenities": "Work Amenities",
+    "comfortFeatures": "Comfort Features",
+    "workAmenitiesList": [
+      "Starlink high-speed internet",
+      "24/7 electricity",
+      "Spacious desk space",
+      "Ocean view terrace"
+    ],
+    "comfortFeaturesList": [
+      "Air conditioning",
+      "Unlimited coffee",
+      "Quiet environment",
+      "Snacks available"
+    ],
+    "workQuote": "Work from paradise without compromising on connectivity or comfort.",
+    "experienceCta": "Experience Hangar Café",
+    "experienceCtaDesc": "Complimentary access for all cabin guests. Book your stay today!",
+    "seeTheCabin": "See The Cabin",
+    "offerings": [
+      "Cappuccino & espresso drinks",
+      "Fresh breakfast options",
+      "Local snacks and treats",
+      "High-speed WiFi",
+      "Comfortable workspace",
+      "Ocean view terrace"
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "A glimpse of paradise"
+  },
+  "testimonials": {
+    "title": "What Our Guests Say",
+    "description": "Real experiences from travelers who've discovered their own paradise at Cabaña Sancibrian.",
+    "items": [
+      {
+        "name": "Sarah Johnson",
+        "location": "New York, USA",
+        "text": "The perfect remote work paradise! Starlink was faster than my WiFi at home. Waking up to ocean views and working from the Hangar Café was a dream.",
+        "platform": "Airbnb"
+      },
+      {
+        "name": "Carlos Ramírez",
+        "location": "Bogotá, Colombia",
+        "text": "Un lugar mágico. La atención es excepcional y tener electricidad 24/7 marca la diferencia. La bañera bajo las estrellas es inolvidable!",
+        "platform": "Booking.com"
+      },
+      {
+        "name": "Emma & Tom",
+        "location": "London, UK",
+        "text": "Amazing stopover on our sailing trip from San Blas to Cartagena. The cabin is beautiful, the food incredible, and the aviation theme is so unique!",
+        "platform": "TripAdvisor"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know before your adventure.",
+    "items": [
+      {
+        "question": "How do I get to Sapzurro?",
+        "answer": "The fastest route is flying to Acandí airport (1h from Medellín), then a short boat ride to Sapzurro (30-40 min). Alternatively, fly to Apartadó or Montería, ground transport to Necoclí (2-3h), then speedboat to Sapzurro (1.5-2h). We can help coordinate all transportation."
+      },
+      {
+        "question": "What's included in my stay?",
+        "answer": "Accommodation with Starlink WiFi, 24/7 electricity, hot water, premium linens and towels, and access to Hangar Café. Breakfast and other meals available upon request."
+      },
+      {
+        "question": "Is there cell phone signal?",
+        "answer": "Cell signal is limited and depends on your carrier. However, we offer high-speed Starlink WiFi to keep you connected."
+      },
+      {
+        "question": "What's the best time to visit?",
+        "answer": "Sapzurro is beautiful year-round. December-March offers less rain and better weather. April-November has more rain but fewer tourists and greener nature."
+      },
+      {
+        "question": "Can I work remotely from the cabin?",
+        "answer": "Absolutely! We're designed for digital nomads. Starlink internet, 24/7 power, spacious desk, and Hangar Café coworking space make it perfect for remote work."
+      },
+      {
+        "question": "Is Sapzurro safe?",
+        "answer": "Very safe! It's a small fishing village with a friendly community. The main risk is falling in love with the place and never wanting to leave!"
+      }
+    ]
+  },
+  "booking": {
+    "title": "Ready for Your Adventure?",
+    "subtitle": "Book your stay at The Captain's Cabin",
+    "description": "Choose your preferred platform or contact us directly for the best rates.",
+    "whatsappText": "Message us on WhatsApp",
+    "airbnbText": "Book on Airbnb",
+    "bookingText": "Book on Booking.com",
+    "directBookingNote": "Direct booking = Best price",
+    "cryptoNote": "We accept crypto payments via Solana",
+    "bestRates": "Best rates & instant replies",
+    "readReviews": "Read reviews & book securely",
+    "flexibleCancellation": "Flexible cancellation options",
+    "questionsEmail": "Questions? Email us at"
+  },
+  "sapzurro": {
+    "title": "Sapzurro: The Caribbean's Best-Kept Secret",
+    "subtitle": "At the Crossroads of Continents",
+    "description": "Nestled in the heart of the Colombian Darién, Sapzurro is a small fishing village where the jungle meets the sea. Accessible only by boat, this paradise offers a unique experience of total disconnection.",
+    "highlights": [
+      "La Miel: Panamanian beach, 20-minute walk",
+      "Capurganá: Neighboring town with more services",
+      "Unique Darién biodiversity",
+      "Crystal-clear waters perfect for snorkeling",
+      "Strategic stopover for San Blas-Cartagena sailors"
+    ],
+    "strategicLocation": "Perfect for sailors traveling between San Blas Islands (Panama) and Cartagena (Colombia). Sapzurro offers a safe harbor, modern amenities, and Colombian hospitality at the crossroads of two countries."
+  },
+  "activities": {
+    "heroTitle": "Adventures Await",
+    "heroSubtitle": "Things to Do in Sapzurro",
+    "intro": "From jungle hikes to crystal-clear snorkeling, Sapzurro offers unforgettable experiences for every type of traveler.",
+    "signatureTitle": "Signature Experiences",
+    "items": [
+      { "title": "Snorkeling & Diving", "description": "Explore vibrant coral reefs and tropical fish in crystal-clear waters." },
+      { "title": "Hike to La Miel", "description": "20-minute jungle trail to a pristine Panamanian beach. Don't forget your passport!" },
+      { "title": "Kayaking", "description": "Paddle along the coastline and discover hidden coves." },
+      { "title": "Bird Watching", "description": "Spot exotic species in the Darién's rich biodiversity." },
+      { "title": "Sport Fishing", "description": "Try your luck with local fishermen in the Caribbean waters." },
+      { "title": "Simply Relax", "description": "Hammock, book, and the sound of waves. Pure bliss." }
+    ],
+    "startAdventure": "Start Your Adventure",
+    "startAdventureDesc": "We can help arrange activities, tours, and local guides.",
+    "bookYourStay": "Book Your Stay",
+    "seeTheCabin": "See The Cabin"
+  },
+  "howToGetHere": {
+    "title": "Your Journey to Paradise",
+    "subtitle": "All roads (and boats) lead to Sapzurro",
+    "intro": "Sapzurro is accessible only by boat, making it a true hidden paradise. The journey is part of the adventure! We can help coordinate your transportation from any starting point.",
+    "routesTitle": "Routes to Sapzurro",
+    "from": "From",
+    "note": "Note:",
+    "routes": [
+      {
+        "from": "Medellín (via Apartadó)",
+        "steps": ["Flight to Apartadó (45 min) or bus (8h)", "Shared van to Necoclí (2.5h)", "Speedboat to Sapzurro (1.5h)"],
+        "duration": "~5-6 hours total (by air)"
+      },
+      {
+        "from": "Medellín (via Acandí)",
+        "steps": ["Flight to Acandí airport (1h)", "Boat from Acandí to Sapzurro (30-40 min)"],
+        "duration": "~2-3 hours total",
+        "note": "Fastest route! Limited flight schedules, check availability in advance"
+      },
+      {
+        "from": "Bogotá",
+        "steps": ["Flight to Montería or Apartadó (1.5h)", "Ground transport to Turbo/Necoclí (2-3h)", "Speedboat to Sapzurro (1.5h)"],
+        "duration": "~6-7 hours total"
+      },
+      {
+        "from": "Cartagena",
+        "steps": ["Bus to Montería (6h) or flight (45 min)", "Transport to Necoclí (3h)", "Boat to Sapzurro (1.5h)"],
+        "duration": "Variable"
+      },
+      {
+        "from": "San Blas Islands (Panama)",
+        "steps": ["Sail south along the coast", "Clear immigration at Puerto Obaldía", "Short sail to Sapzurro"],
+        "duration": "Variable by wind",
+        "note": "Popular stopover for sailors heading to Cartagena"
+      }
+    ],
+    "travelTipsTitle": "Essential Travel Tips",
+    "tips": [
+      "Boats depart mainly in the morning (6-8 AM)",
+      "Bring cash: ATM in Capurganá but not always working",
+      "Pack light: maritime transport has luggage limits",
+      "Use biodegradable sunscreen to protect our reefs",
+      "Bring your passport if you want to visit La Miel (Panama)"
+    ],
+    "mapTitle": "Where is Sapzurro?",
+    "mapDescription": "Located in the Darién region of Colombia, right at the border with Panama. Sapzurro sits where the jungle meets the Caribbean Sea.",
+    "walkToPanama": "walk to Panama",
+    "boatToCapurgana": "boat to Capurganá",
+    "boatFromNecoclí": "boat from Necoclí",
+    "needHelp": "Need Help Planning Your Trip?",
+    "needHelpDesc": "We can help coordinate your entire journey from door to door. Get personalized travel advice and transportation arrangements.",
+    "whatsappHelp": "WhatsApp Us for Help",
+    "emailUs": "Email Us",
+    "responseTime": "We respond within 24 hours • We speak English & Spanish"
+  },
+  "contact": {
+    "heroTitle": "Get in Touch",
+    "heroSubtitle": "We're here to help plan your perfect getaway",
+    "waysToReachUs": "Ways to Reach Us",
+    "whatsappTitle": "WhatsApp",
+    "whatsappDesc": "Fastest response time. Message us anytime!",
+    "emailTitle": "Email",
+    "emailDesc": "For detailed inquiries and questions",
+    "instagramTitle": "Instagram",
+    "instagramDesc": "See our latest photos and stories",
+    "beforeContact": "Before You Contact Us",
+    "whatInfoTitle": "What information should I include in my inquiry?",
+    "whatInfoItems": [
+      "Check-in and check-out dates",
+      "Number of guests",
+      "Any special requests or questions",
+      "Your preferred contact method"
+    ],
+    "responseTitle": "How quickly will you respond?",
+    "responseText": "We typically respond to WhatsApp messages within 2-4 hours during business hours. Emails are answered within 24 hours. We speak both English and Spanish fluently.",
+    "cancellationTitle": "What's your cancellation policy?",
+    "cancellationText": "Free cancellation up to 7 days before check-in. Different policies may apply on Airbnb and Booking.com. Contact us directly for the most flexible rates.",
+    "readyToBook": "Ready to Book?",
+    "whatsappMessage": "Hi! I'd like to know more about availability and rates at Cabaña Sancibrian."
+  },
+  "footer": {
+    "tagline": "Your oasis at the crossroads of continents. Premium beachfront accommodation in Sapzurro, Colombia.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "bookYourStay": "Book Your Stay",
+    "whatsappDirect": "WhatsApp Direct",
+    "allRightsReserved": "All rights reserved.",
+    "inLovingMemory": "In loving memory of Captain Diego Domínguez Escobar"
+  },
+  "whatsapp": {
+    "tooltip": "Chat with us!",
+    "ariaLabel": "Contact us on WhatsApp"
+  },
+  "common": {
+    "backToHome": "Back to Home"
+  }
+}

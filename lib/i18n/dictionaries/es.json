@@ -1,0 +1,326 @@
+{
+  "site": {
+    "title": "Cabaña Sancibrian | Tu Oficina Paradisíaca en el Caribe, Sapzurro",
+    "description": "Trabaja, juega y desconéctate en tu oasis en el cruce de continentes. Alojamiento premium frente al mar en Sapzurro con WiFi Starlink, electricidad 24/7 y encanto de aviación vintage."
+  },
+  "nav": {
+    "home": "Inicio",
+    "cabin": "La Cabaña",
+    "cafe": "Hangar Café",
+    "sapzurro": "Sapzurro",
+    "activities": "Actividades",
+    "howToGetHere": "Cómo Llegar",
+    "contact": "Contacto",
+    "bookNow": "Reservar"
+  },
+  "hero": {
+    "headline": "Desconéctate para Reconectarte O No. Tenemos Energía y Starlink 24/7",
+    "subheadline": "Tu Oasis en el Cruce de Continentes",
+    "description": "Vive la mezcla perfecta entre trabajo remoto y paraíso tropical en Sapzurro, la joya escondida de Colombia.",
+    "cta": "Reserva Tu Estadía",
+    "ctaSecondary": "Explora La Cabaña"
+  },
+  "captainStory": {
+    "title": "Un Tributo al Capitán Diego Domínguez Escobar",
+    "subtitle": "Donde el Legado de la Aviación se Encuentra con el Paraíso Caribeño",
+    "story": "Cabaña Sancibrian honra la vida y el legado del Capitán Diego Domínguez Escobar, cuyo espíritu de aventura y exploración vive en cada rincón de este refugio frente al mar. Desde hélices vintage hasta pósters clásicos de aviación, la cabaña celebra la era dorada del vuelo mientras ofrece comodidades modernas en uno de los destinos más prístinos de Colombia.",
+    "quote": "\"La aventura vale la pena en sí misma.\" - Amelia Earhart"
+  },
+  "features": {
+    "sectionTitle": "La Experiencia Sancibrian",
+    "sectionDescription": "Donde las comodidades modernas se encuentran con el paraíso caribeño. Todo lo que necesitas para el retiro perfecto de trabajo remoto.",
+    "featured": "Destacado",
+    "items": [
+      { "title": "Electricidad 24/7", "description": "Sistema de baterías Batx de respaldo. Uno de los pocos en toda la región con energía constante." },
+      { "title": "Internet Starlink", "description": "Conexión satelital de alta velocidad. Perfecto para nómadas digitales y trabajo remoto." },
+      { "title": "A Pasos de Playa Bonita", "description": "Acceso directo a la playa principal. Despierta con el sonido de las olas." },
+      { "title": "Bañera Exterior", "description": "Baño mágico de flores y hierbas por la noche. Una experiencia única bajo las estrellas." },
+      { "title": "Temática de Aviación", "description": "Arte y decoración vintage en tributo al legado del Capitán Diego." },
+      { "title": "Hangar Café", "description": "Café colombiano y espacio de coworking en la propiedad, disponible 24/7." },
+      { "title": "Netflix + Alexa", "description": "Comodidades modernas en un paraíso remoto. Entretenimiento cuando lo necesites." },
+      { "title": "Ubicación Estratégica", "description": "Escala perfecta para veleros de San Blas a Cartagena." }
+    ]
+  },
+  "cabin": {
+    "title": "La Cabaña del Capitán",
+    "subtitle": "Tu Hogar en el Paraíso",
+    "capacity": "4 adultos",
+    "size": "40m²",
+    "beds": "2 camas Queen",
+    "capacityLabel": "Capacidad Máxima",
+    "sizeLabel": "Espacio Total",
+    "bedsLabel": "Distribución de Camas",
+    "whatsIncluded": "Qué Incluye",
+    "gallery": "Galería",
+    "goodToKnow": "Bueno Saber",
+    "notIncludedTitle": "Qué NO Incluye:",
+    "notIncluded": [
+      "Comidas (disponibles en Hangar Café)",
+      "Transporte hacia/desde Sapzurro (podemos ayudar a coordinar)",
+      "Actividades y tours (disponibles localmente)"
+    ],
+    "houseRulesTitle": "Reglas de la Casa:",
+    "houseRules": [
+      "Check-in: 3:00 PM / Check-out: 11:00 AM",
+      "Horas de silencio: 10:00 PM - 7:00 AM",
+      "No fumar dentro de la cabaña",
+      "Mascotas bienvenidas con aprobación previa",
+      "Por favor usa productos biodegradables para proteger nuestros arrecifes"
+    ],
+    "amenities": [
+      "Ducha exterior y baño mágico de hierbas",
+      "Internet satelital Starlink",
+      "Escritorio espacioso para trabajo remoto",
+      "Netflix y Amazon Alexa",
+      "Ropa de cama premium y colchones cómodos",
+      "Arte y decoración de aviación vintage",
+      "Minibar curado a mano",
+      "Electricidad 24/7 con baterías de respaldo",
+      "Agua caliente",
+      "Acceso a la playa"
+    ]
+  },
+  "cafe": {
+    "title": "Hangar Café",
+    "subtitle": "Recarga Tus Aventuras",
+    "description": "Café colombiano premium, desayuno y snacks disponibles 24/7 para huéspedes. El espacio de coworking perfecto con vistas al mar.",
+    "open247": "Abierto 24/7 para Huéspedes",
+    "whatWeOffer": "Qué Ofrecemos",
+    "theSpace": "El Espacio",
+    "menuHighlights": "Destacados del Menú",
+    "premiumCoffee": "Café Premium",
+    "premiumCoffeeDesc": "Cappuccino, espresso y más con granos colombianos",
+    "freshBreakfast": "Desayuno Fresco",
+    "freshBreakfastDesc": "Frutas locales, huevos, arepas y más",
+    "colombianArepas": "Arepas Colombianas",
+    "colombianArepasDesc": "Tortillas de maíz tradicionales con varios rellenos",
+    "tropicalFruits": "Frutas Tropicales",
+    "tropicalFruitsDesc": "Frutas frescas de temporada de la región",
+    "perfectForRemoteWork": "Perfecto para Trabajo Remoto",
+    "workAmenities": "Amenidades de Trabajo",
+    "comfortFeatures": "Características de Confort",
+    "workAmenitiesList": [
+      "Internet Starlink de alta velocidad",
+      "Electricidad 24/7",
+      "Amplio espacio de escritorio",
+      "Terraza con vista al mar"
+    ],
+    "comfortFeaturesList": [
+      "Aire acondicionado",
+      "Café ilimitado",
+      "Ambiente tranquilo",
+      "Snacks disponibles"
+    ],
+    "workQuote": "Trabaja desde el paraíso sin comprometer conectividad ni comodidad.",
+    "experienceCta": "Conoce el Hangar Café",
+    "experienceCtaDesc": "Acceso gratuito para todos los huéspedes de la cabaña. ¡Reserva tu estadía hoy!",
+    "seeTheCabin": "Ver La Cabaña",
+    "offerings": [
+      "Cappuccino y bebidas de espresso",
+      "Opciones de desayuno fresco",
+      "Snacks y delicias locales",
+      "WiFi de alta velocidad",
+      "Espacio de trabajo cómodo",
+      "Terraza con vista al mar"
+    ]
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Un vistazo al paraíso"
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Huéspedes",
+    "description": "Experiencias reales de viajeros que han descubierto su propio paraíso en Cabaña Sancibrian.",
+    "items": [
+      {
+        "name": "Sarah Johnson",
+        "location": "Nueva York, EE.UU.",
+        "text": "¡El paraíso perfecto para trabajo remoto! Starlink fue más rápido que mi WiFi en casa. Despertar con vistas al mar y trabajar desde el Hangar Café fue un sueño.",
+        "platform": "Airbnb"
+      },
+      {
+        "name": "Carlos Ramírez",
+        "location": "Bogotá, Colombia",
+        "text": "Un lugar mágico. La atención es excepcional y tener electricidad 24/7 marca la diferencia. ¡La bañera bajo las estrellas es inolvidable!",
+        "platform": "Booking.com"
+      },
+      {
+        "name": "Emma & Tom",
+        "location": "Londres, Reino Unido",
+        "text": "Increíble escala en nuestro viaje en velero desde San Blas a Cartagena. La cabaña es hermosa, la comida increíble, ¡y la temática de aviación es súper única!",
+        "platform": "TripAdvisor"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Todo lo que necesitas saber antes de tu aventura.",
+    "items": [
+      {
+        "question": "¿Cómo llego a Sapzurro?",
+        "answer": "La ruta más rápida es volar al aeropuerto de Acandí (1h desde Medellín), luego un corto viaje en lancha a Sapzurro (30-40 min). Alternativamente, vuela a Apartadó o Montería, transporte terrestre a Necoclí (2-3h), luego lancha rápida a Sapzurro (1.5-2h). Podemos ayudarte a coordinar todo el transporte."
+      },
+      {
+        "question": "¿Qué incluye mi estadía?",
+        "answer": "Alojamiento con WiFi Starlink, electricidad 24/7, agua caliente, ropa de cama y toallas premium, y acceso al Hangar Café. Desayuno y otras comidas disponibles bajo pedido."
+      },
+      {
+        "question": "¿Hay señal de celular?",
+        "answer": "La señal celular es limitada y depende de tu operador. Sin embargo, ofrecemos WiFi Starlink de alta velocidad para mantenerte conectado."
+      },
+      {
+        "question": "¿Cuál es la mejor época para visitar?",
+        "answer": "Sapzurro es hermoso todo el año. De diciembre a marzo hay menos lluvia y mejor clima. De abril a noviembre hay más lluvia pero menos turistas y naturaleza más verde."
+      },
+      {
+        "question": "¿Puedo trabajar remotamente desde la cabaña?",
+        "answer": "¡Absolutamente! Estamos diseñados para nómadas digitales. Internet Starlink, energía 24/7, escritorio espacioso y el espacio de coworking Hangar Café lo hacen perfecto para trabajo remoto."
+      },
+      {
+        "question": "¿Es seguro Sapzurro?",
+        "answer": "¡Muy seguro! Es un pequeño pueblo pesquero con una comunidad amigable. ¡El mayor riesgo es enamorarte del lugar y no querer irte nunca!"
+      }
+    ]
+  },
+  "booking": {
+    "title": "¿Listo para Tu Aventura?",
+    "subtitle": "Reserva tu estadía en La Cabaña del Capitán",
+    "description": "Elige tu plataforma preferida o contáctanos directamente para las mejores tarifas.",
+    "whatsappText": "Escríbenos por WhatsApp",
+    "airbnbText": "Reserva en Airbnb",
+    "bookingText": "Reserva en Booking.com",
+    "directBookingNote": "Reserva directa = Mejor precio",
+    "cryptoNote": "Aceptamos pagos con crypto vía Solana",
+    "bestRates": "Mejores tarifas y respuestas instantáneas",
+    "readReviews": "Lee reseñas y reserva con seguridad",
+    "flexibleCancellation": "Opciones de cancelación flexibles",
+    "questionsEmail": "¿Preguntas? Escríbenos a"
+  },
+  "sapzurro": {
+    "title": "Sapzurro: El Secreto Mejor Guardado del Caribe",
+    "subtitle": "En el Cruce de Continentes",
+    "description": "Ubicado en el corazón del Darién colombiano, Sapzurro es un pequeño pueblo pesquero donde la selva se encuentra con el mar. Accesible solo por lancha, este paraíso ofrece una experiencia única de desconexión total.",
+    "highlights": [
+      "La Miel: playa panameña, 20 minutos a pie",
+      "Capurganá: pueblo vecino con más servicios",
+      "Biodiversidad única del Darién",
+      "Aguas cristalinas perfectas para snorkeling",
+      "Escala estratégica para veleros San Blas-Cartagena"
+    ],
+    "strategicLocation": "Perfecto para veleros que viajan entre las Islas de San Blas (Panamá) y Cartagena (Colombia). Sapzurro ofrece un puerto seguro, comodidades modernas y hospitalidad colombiana en el cruce de dos países."
+  },
+  "activities": {
+    "heroTitle": "Aventuras Te Esperan",
+    "heroSubtitle": "Qué Hacer en Sapzurro",
+    "intro": "Desde caminatas por la selva hasta snorkeling en aguas cristalinas, Sapzurro ofrece experiencias inolvidables para todo tipo de viajero.",
+    "signatureTitle": "Experiencias Destacadas",
+    "items": [
+      { "title": "Snorkeling y Buceo", "description": "Explora arrecifes de coral vibrantes y peces tropicales en aguas cristalinas." },
+      { "title": "Caminata a La Miel", "description": "Sendero de 20 minutos por la selva hasta una playa prístina panameña. ¡No olvides tu pasaporte!" },
+      { "title": "Kayak", "description": "Rema a lo largo de la costa y descubre calas escondidas." },
+      { "title": "Avistamiento de Aves", "description": "Observa especies exóticas en la rica biodiversidad del Darién." },
+      { "title": "Pesca Deportiva", "description": "Prueba tu suerte con pescadores locales en las aguas del Caribe." },
+      { "title": "Simplemente Relájate", "description": "Hamaca, libro y el sonido de las olas. Pura felicidad." }
+    ],
+    "startAdventure": "Comienza Tu Aventura",
+    "startAdventureDesc": "Podemos ayudarte a organizar actividades, tours y guías locales.",
+    "bookYourStay": "Reserva Tu Estadía",
+    "seeTheCabin": "Ver La Cabaña"
+  },
+  "howToGetHere": {
+    "title": "Tu Viaje al Paraíso",
+    "subtitle": "Todos los caminos (y lanchas) llevan a Sapzurro",
+    "intro": "Sapzurro es accesible solo por lancha, lo que lo convierte en un verdadero paraíso escondido. ¡El viaje es parte de la aventura! Podemos ayudarte a coordinar tu transporte desde cualquier punto de partida.",
+    "routesTitle": "Rutas a Sapzurro",
+    "from": "Desde",
+    "note": "Nota:",
+    "routes": [
+      {
+        "from": "Medellín (vía Apartadó)",
+        "steps": ["Vuelo a Apartadó (45 min) o bus (8h)", "Van compartida a Necoclí (2.5h)", "Lancha rápida a Sapzurro (1.5h)"],
+        "duration": "~5-6 horas en total (por aire)"
+      },
+      {
+        "from": "Medellín (vía Acandí)",
+        "steps": ["Vuelo al aeropuerto de Acandí (1h)", "Lancha de Acandí a Sapzurro (30-40 min)"],
+        "duration": "~2-3 horas en total",
+        "note": "¡Ruta más rápida! Horarios de vuelo limitados, consulta disponibilidad con anticipación"
+      },
+      {
+        "from": "Bogotá",
+        "steps": ["Vuelo a Montería o Apartadó (1.5h)", "Transporte terrestre a Turbo/Necoclí (2-3h)", "Lancha rápida a Sapzurro (1.5h)"],
+        "duration": "~6-7 horas en total"
+      },
+      {
+        "from": "Cartagena",
+        "steps": ["Bus a Montería (6h) o vuelo (45 min)", "Transporte a Necoclí (3h)", "Lancha a Sapzurro (1.5h)"],
+        "duration": "Variable"
+      },
+      {
+        "from": "Islas de San Blas (Panamá)",
+        "steps": ["Navega hacia el sur por la costa", "Pasa migración en Puerto Obaldía", "Corta navegación a Sapzurro"],
+        "duration": "Variable según el viento",
+        "note": "Escala popular para veleros rumbo a Cartagena"
+      }
+    ],
+    "travelTipsTitle": "Consejos Esenciales de Viaje",
+    "tips": [
+      "Las lanchas salen principalmente en la mañana (6-8 AM)",
+      "Trae efectivo: cajero en Capurganá pero no siempre funciona",
+      "Empaca ligero: el transporte marítimo tiene límites de equipaje",
+      "Usa protector solar biodegradable para proteger nuestros arrecifes",
+      "Trae tu pasaporte si quieres visitar La Miel (Panamá)"
+    ],
+    "mapTitle": "¿Dónde queda Sapzurro?",
+    "mapDescription": "Ubicado en la región del Darién de Colombia, justo en la frontera con Panamá. Sapzurro se encuentra donde la selva se encuentra con el Mar Caribe.",
+    "walkToPanama": "caminata a Panamá",
+    "boatToCapurgana": "lancha a Capurganá",
+    "boatFromNecoclí": "lancha desde Necoclí",
+    "needHelp": "¿Necesitas Ayuda Planeando Tu Viaje?",
+    "needHelpDesc": "Podemos ayudarte a coordinar todo tu viaje de puerta a puerta. Obtén asesoría personalizada y arreglos de transporte.",
+    "whatsappHelp": "Escríbenos por WhatsApp",
+    "emailUs": "Envíanos un Email",
+    "responseTime": "Respondemos en 24 horas • Hablamos inglés y español"
+  },
+  "contact": {
+    "heroTitle": "Contáctanos",
+    "heroSubtitle": "Estamos aquí para ayudarte a planear tu escapada perfecta",
+    "waysToReachUs": "Formas de Contactarnos",
+    "whatsappTitle": "WhatsApp",
+    "whatsappDesc": "Tiempo de respuesta más rápido. ¡Escríbenos cuando quieras!",
+    "emailTitle": "Email",
+    "emailDesc": "Para consultas detalladas y preguntas",
+    "instagramTitle": "Instagram",
+    "instagramDesc": "Mira nuestras últimas fotos e historias",
+    "beforeContact": "Antes de Contactarnos",
+    "whatInfoTitle": "¿Qué información debo incluir en mi consulta?",
+    "whatInfoItems": [
+      "Fechas de check-in y check-out",
+      "Número de huéspedes",
+      "Solicitudes especiales o preguntas",
+      "Tu método de contacto preferido"
+    ],
+    "responseTitle": "¿Qué tan rápido responden?",
+    "responseText": "Típicamente respondemos mensajes de WhatsApp en 2-4 horas durante horario laboral. Los emails se responden en 24 horas. Hablamos inglés y español con fluidez.",
+    "cancellationTitle": "¿Cuál es su política de cancelación?",
+    "cancellationText": "Cancelación gratuita hasta 7 días antes del check-in. Diferentes políticas pueden aplicar en Airbnb y Booking.com. Contáctanos directamente para las tarifas más flexibles.",
+    "readyToBook": "¿Listo para Reservar?",
+    "whatsappMessage": "¡Hola! Me gustaría saber más sobre disponibilidad y tarifas en Cabaña Sancibrian."
+  },
+  "footer": {
+    "tagline": "Tu oasis en el cruce de continentes. Alojamiento premium frente al mar en Sapzurro, Colombia.",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "bookYourStay": "Reserva Tu Estadía",
+    "whatsappDirect": "WhatsApp Directo",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "inLovingMemory": "En memoria del Capitán Diego Domínguez Escobar"
+  },
+  "whatsapp": {
+    "tooltip": "¡Chatea con nosotros!",
+    "ariaLabel": "Contáctanos por WhatsApp"
+  },
+  "common": {
+    "backToHome": "Volver al Inicio"
+  }
+}

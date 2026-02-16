@@ -3,7 +3,8 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "How to Get to Sapzurro | Cabaña Sancibrian",
-  description: "Complete travel guide to reach Sapzurro, Colombia. Routes from Medellín, Bogotá, Cartagena, and San Blas Islands. We help coordinate your entire journey.",
+  description:
+    "Complete travel guide to reach Sapzurro, Colombia. Routes from Medellín, Bogotá, Cartagena, and San Blas Islands. We help coordinate your entire journey.",
   keywords: [
     "how to get to Sapzurro",
     "Sapzurro travel guide",
@@ -16,7 +17,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "How to Get to Sapzurro | Cabaña Sancibrian",
-    description: "Complete travel guide with routes from Medellín, Bogotá, Cartagena, and San Blas Islands.",
+    description:
+      "Complete travel guide with routes from Medellín, Bogotá, Cartagena, and San Blas Islands.",
     url: `${SITE_CONFIG.url}/how-to-get-here`,
     images: [
       {
@@ -30,7 +32,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "How to Get to Sapzurro | Cabaña Sancibrian",
-    description: "Complete travel guide to reach Sapzurro, Colombia from anywhere.",
+    description:
+      "Complete travel guide to reach Sapzurro, Colombia from anywhere.",
     images: ["/images/sapzurro/path.jpg"],
   },
 };

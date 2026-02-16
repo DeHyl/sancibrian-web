@@ -4,11 +4,14 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import { BOOKING_CTA, CONTACT } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function BookingCTA() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const { dict } = useDictionary();
+  const t = dict.booking;
 
   return (
     <section ref={ref} className="section-container bg-gradient-tropical text-perla">
@@ -18,12 +21,12 @@ export default function BookingCTA() {
         transition={{ duration: 0.8 }}
         className="max-w-4xl mx-auto text-center"
       >
-        <h2 className="text-perla mb-4">{BOOKING_CTA.title}</h2>
+        <h2 className="text-perla mb-4">{t.title}</h2>
         <p className="text-2xl font-display text-bronze mb-6">
-          {BOOKING_CTA.subtitle}
+          {t.subtitle}
         </p>
         <p className="text-lg text-arena-light/90 mb-12">
-          {BOOKING_CTA.description}
+          {t.description}
         </p>
 
         {/* Booking Options */}
@@ -48,11 +51,11 @@ export default function BookingCTA() {
               </svg>
             </div>
             <h3 className="text-xl font-display font-bold text-caribe mb-2">
-              {BOOKING_CTA.whatsappText}
+              {t.whatsappText}
             </h3>
-            <p className="text-sm text-oscuro/60">Best rates & instant replies</p>
+            <p className="text-sm text-oscuro/60">{t.bestRates}</p>
             <div className="mt-4 bg-bronze/10 text-bronze text-xs font-semibold px-3 py-1 rounded-full">
-              {BOOKING_CTA.directBookingNote}
+              {t.directBookingNote}
             </div>
           </motion.a>
 
@@ -70,9 +73,9 @@ export default function BookingCTA() {
               <Image src="/images/airbnb.png" alt="Airbnb" width={64} height={64} className="object-contain" />
             </div>
             <h3 className="text-xl font-display font-bold text-caribe mb-2">
-              {BOOKING_CTA.airbnbText}
+              {t.airbnbText}
             </h3>
-            <p className="text-sm text-oscuro/60">Read reviews & book securely</p>
+            <p className="text-sm text-oscuro/60">{t.readReviews}</p>
           </motion.a>
 
           {/* Booking.com */}
@@ -89,9 +92,9 @@ export default function BookingCTA() {
               <Image src="/images/booking.png" alt="Booking.com" width={64} height={64} className="object-contain" />
             </div>
             <h3 className="text-xl font-display font-bold text-caribe mb-2">
-              {BOOKING_CTA.bookingText}
+              {t.bookingText}
             </h3>
-            <p className="text-sm text-oscuro/60">Flexible cancellation options</p>
+            <p className="text-sm text-oscuro/60">{t.flexibleCancellation}</p>
           </motion.a>
         </div>
 
@@ -119,7 +122,7 @@ export default function BookingCTA() {
                 </linearGradient>
               </defs>
             </svg>
-            <span className="text-sm font-medium text-perla">{BOOKING_CTA.cryptoNote}</span>
+            <span className="text-sm font-medium text-perla">{t.cryptoNote}</span>
           </div>
         </motion.div>
 
@@ -131,7 +134,7 @@ export default function BookingCTA() {
           className="text-arena-light/80 text-sm"
         >
           <p>
-            Questions? Email us at{" "}
+            {t.questionsEmail}{" "}
             <a
               href={`mailto:${CONTACT.email}`}
               className="text-bronze hover:underline"

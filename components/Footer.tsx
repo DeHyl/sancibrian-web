@@ -1,8 +1,18 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { SITE_CONFIG, CONTACT, NAVIGATION } from "@/lib/constants";
+import { SITE_CONFIG, CONTACT, ROUTES } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function Footer() {
+  const { dict, locale } = useDictionary();
+
+  const navItems = ROUTES.map((route) => ({
+    name: dict.nav[route.key as keyof typeof dict.nav] || route.key,
+    href: `/${locale}${route.href}`,
+  }));
+
   return (
     <footer className="bg-oscuro text-perla">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -23,7 +33,7 @@ export default function Footer() {
               </h3>
             </div>
             <p className="text-sm text-arena-light/80">
-              Your oasis at the crossroads of continents. Premium beachfront accommodation in Sapzurro, Colombia.
+              {dict.footer.tagline}
             </p>
             <div className="flex space-x-4">
               <a
@@ -65,11 +75,11 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-display font-semibold mb-4 text-bronze">
-              Quick Links
+              {dict.footer.quickLinks}
             </h4>
             <ul className="space-y-2">
-              {NAVIGATION.map((item) => (
-                <li key={item.name}>
+              {navItems.map((item) => (
+                <li key={item.href}>
                   <Link
                     href={item.href}
                     className="text-sm text-arena-light/80 hover:text-bronze transition-colors"
@@ -84,7 +94,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-lg font-display font-semibold mb-4 text-bronze">
-              Contact
+              {dict.footer.contact}
             </h4>
             <ul className="space-y-2 text-sm text-arena-light/80">
               <li>
@@ -118,7 +128,7 @@ export default function Footer() {
           {/* Book Now */}
           <div>
             <h4 className="text-lg font-display font-semibold mb-4 text-bronze">
-              Book Your Stay
+              {dict.footer.bookYourStay}
             </h4>
             <div className="space-y-3">
               <a
@@ -145,7 +155,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="block w-full bg-bronze hover:bg-bronze-dark text-perla text-center px-4 py-2 rounded-lg transition-colors text-sm font-semibold"
               >
-                WhatsApp Direct
+                {dict.footer.whatsappDirect}
               </a>
             </div>
           </div>
@@ -154,10 +164,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-arena-light/20 mt-12 pt-8 text-center text-sm text-arena-light/60">
           <p>
-            &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All rights reserved.
+            &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. {dict.footer.allRightsReserved}
           </p>
           <p className="mt-2 text-xs">
-            In loving memory of Captain Diego Domínguez Escobar
+            {dict.footer.inLovingMemory}
           </p>
         </div>
       </div>

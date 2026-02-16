@@ -3,7 +3,8 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About Sapzurro | The Caribbean's Best-Kept Secret",
-  description: "Discover Sapzurro, Colombia's hidden paradise at the Panama border. Pristine beaches, Darién biodiversity, and the perfect stopover for San Blas-Cartagena sailors.",
+  description:
+    "Discover Sapzurro, Colombia's hidden paradise at the Panama border. Pristine beaches, Darién biodiversity, and the perfect stopover for San Blas-Cartagena sailors.",
   keywords: [
     "Sapzurro Colombia",
     "Sapzurro Darién",
@@ -15,7 +16,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "About Sapzurro | The Caribbean's Best-Kept Secret",
-    description: "Pristine beaches, jungle biodiversity, and Caribbean paradise at the Colombia-Panama border.",
+    description:
+      "Pristine beaches, jungle biodiversity, and Caribbean paradise at the Colombia-Panama border.",
     url: `${SITE_CONFIG.url}/sapzurro`,
     images: [
       {

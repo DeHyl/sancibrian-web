@@ -3,12 +3,14 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { FAQ as FAQ_DATA } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function FAQ() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const { dict } = useDictionary();
+  const t = dict.faq;
 
   return (
     <section ref={ref} className="section-container bg-perla">
@@ -18,14 +20,14 @@ export default function FAQ() {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <h2 className="text-caribe mb-4">Frequently Asked Questions</h2>
+        <h2 className="text-caribe mb-4">{t.title}</h2>
         <p className="text-xl text-oscuro/70 max-w-3xl mx-auto">
-          Everything you need to know before your adventure
+          {t.description}
         </p>
       </motion.div>
 
       <div className="max-w-3xl mx-auto space-y-4">
-        {FAQ_DATA.map((item, index) => (
+        {t.items.map((item: { question: string; answer: string }, index: number) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}

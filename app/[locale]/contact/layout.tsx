@@ -3,7 +3,8 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact Us | Cabaña Sancibrian",
-  description: "Contact Cabaña Sancibrian for reservations and inquiries. WhatsApp, email, or social media. We respond quickly in English & Spanish.",
+  description:
+    "Contact Cabaña Sancibrian for reservations and inquiries. WhatsApp, email, or social media. We respond quickly in English & Spanish.",
   keywords: [
     "contact Cabaña Sancibrian",
     "Sapzurro reservations",
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Contact Us | Cabaña Sancibrian",
-    description: "Get in touch for reservations and inquiries. Quick response via WhatsApp or email.",
+    description:
+      "Get in touch for reservations and inquiries. Quick response via WhatsApp or email.",
     url: `${SITE_CONFIG.url}/contact`,
     images: [
       {

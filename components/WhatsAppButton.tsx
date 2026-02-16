@@ -3,10 +3,12 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CONTACT } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
+  const { dict } = useDictionary();
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -22,7 +24,7 @@ export default function WhatsAppButton() {
   }, []);
 
   const whatsappUrl = `${CONTACT.whatsappLink}?text=${encodeURIComponent(
-    CONTACT.whatsappMessage
+    dict.contact.whatsappMessage
   )}`;
 
   return (
@@ -45,7 +47,7 @@ export default function WhatsAppButton() {
                 exit={{ opacity: 0, x: 10 }}
                 className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-oscuro text-perla px-4 py-2 rounded-lg whitespace-nowrap text-sm font-medium shadow-xl"
               >
-                Chat with us!
+                {dict.whatsapp.tooltip}
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-oscuro"></div>
               </motion.div>
             )}
@@ -57,7 +59,7 @@ export default function WhatsAppButton() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-16 h-16 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 animate-float"
-            aria-label="Contact us on WhatsApp"
+            aria-label={dict.whatsapp.ariaLabel}
           >
             <svg
               className="w-9 h-9"

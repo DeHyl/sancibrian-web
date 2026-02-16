@@ -5,11 +5,14 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { GALLERY_IMAGES } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function Gallery() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { dict } = useDictionary();
+  const t = dict.gallery;
 
   return (
     <section ref={ref} className="section-container bg-arena">
@@ -19,16 +22,15 @@ export default function Gallery() {
         transition={{ duration: 0.8 }}
         className="text-center mb-12"
       >
-        <h2 className="text-caribe mb-4">Gallery</h2>
+        <h2 className="text-caribe mb-4">{t.title}</h2>
         <p className="text-xl text-oscuro/70">
-          A glimpse of paradise
+          {t.subtitle}
         </p>
       </motion.div>
 
       {/* Asymmetric Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {GALLERY_IMAGES.map((image, index) => {
-          // Create asymmetric layout
           const isLarge = index === 0 || index === 3;
           const colSpan = isLarge ? "md:col-span-2" : "md:col-span-1";
           const rowSpan = isLarge ? "md:row-span-2" : "md:row-span-1";

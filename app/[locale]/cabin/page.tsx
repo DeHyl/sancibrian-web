@@ -3,10 +3,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { CABIN_SPECS, CONTACT, BOOKING_CTA } from "@/lib/constants";
-
+import { CABIN_IMAGES, CONTACT } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function CabinPage() {
+  const { dict, locale } = useDictionary();
+  const t = dict.cabin;
+  const booking = dict.booking;
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -14,7 +18,7 @@ export default function CabinPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/cabin/exterior.jpg"
-            alt="The Captain's Cabin"
+            alt={t.title}
             fill
             className="object-cover"
             priority
@@ -29,10 +33,10 @@ export default function CabinPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-perla text-shadow-lg mb-4">
-              {CABIN_SPECS.title}
+              {t.title}
             </h1>
             <p className="text-2xl md:text-3xl text-arena font-medium text-shadow">
-              {CABIN_SPECS.subtitle}
+              {t.subtitle}
             </p>
           </motion.div>
         </div>
@@ -50,21 +54,21 @@ export default function CabinPage() {
           >
             <div className="text-center p-8 bg-white rounded-lg shadow-lg">
               <div className="text-5xl font-display font-bold text-caribe mb-2">
-                {CABIN_SPECS.capacity}
+                {t.capacity}
               </div>
-              <div className="text-oscuro font-medium">Maximum Capacity</div>
+              <div className="text-oscuro font-medium">{t.capacityLabel}</div>
             </div>
             <div className="text-center p-8 bg-white rounded-lg shadow-lg">
               <div className="text-5xl font-display font-bold text-caribe mb-2">
-                {CABIN_SPECS.size}
+                {t.size}
               </div>
-              <div className="text-oscuro font-medium">Total Space</div>
+              <div className="text-oscuro font-medium">{t.sizeLabel}</div>
             </div>
             <div className="text-center p-8 bg-white rounded-lg shadow-lg">
               <div className="text-5xl font-display font-bold text-caribe mb-2">
-                {CABIN_SPECS.beds}
+                {t.beds}
               </div>
-              <div className="text-oscuro font-medium">Sleeping Arrangements</div>
+              <div className="text-oscuro font-medium">{t.bedsLabel}</div>
             </div>
           </motion.div>
 
@@ -76,10 +80,10 @@ export default function CabinPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-12">
-              What's Included
+              {t.whatsIncluded}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {CABIN_SPECS.amenities.map((amenity, index) => (
+              {t.amenities.map((amenity: string, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
@@ -107,10 +111,10 @@ export default function CabinPage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-12">
-              Gallery
+              {t.gallery}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {CABIN_SPECS.images.map((image, index) => (
+              {CABIN_IMAGES.map((image, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -142,48 +146,28 @@ export default function CabinPage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-8">
-              Good to Know
+              {t.goodToKnow}
             </h2>
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-oscuro mb-4">What's NOT Included:</h3>
+              <h3 className="text-xl font-bold text-oscuro mb-4">{t.notIncludedTitle}</h3>
               <ul className="space-y-3 text-oscuro">
-                <li className="flex items-start gap-3">
-                  <span className="text-bronze text-xl mt-1">•</span>
-                  <span>Meals (available for purchase at Hangar Café)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bronze text-xl mt-1">•</span>
-                  <span>Transportation to/from Sapzurro (we can help coordinate)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bronze text-xl mt-1">•</span>
-                  <span>Activities and tours (available locally)</span>
-                </li>
+                {t.notIncluded.map((item: string, index: number) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-bronze text-xl mt-1">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
 
               <div className="mt-8 pt-8 border-t border-arena">
-                <h3 className="text-xl font-bold text-oscuro mb-4">House Rules:</h3>
+                <h3 className="text-xl font-bold text-oscuro mb-4">{t.houseRulesTitle}</h3>
                 <ul className="space-y-3 text-oscuro">
-                  <li className="flex items-start gap-3">
-                    <span className="text-caribe text-xl mt-1">•</span>
-                    <span>Check-in: 3:00 PM / Check-out: 11:00 AM</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-caribe text-xl mt-1">•</span>
-                    <span>Quiet hours: 10:00 PM - 7:00 AM</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-caribe text-xl mt-1">•</span>
-                    <span>No smoking inside the cabin</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-caribe text-xl mt-1">•</span>
-                    <span>Pets welcome with prior approval</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-caribe text-xl mt-1">•</span>
-                    <span>Please use biodegradable products to protect our reefs</span>
-                  </li>
+                  {t.houseRules.map((rule: string, index: number) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <span className="text-caribe text-xl mt-1">•</span>
+                      <span>{rule}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -201,9 +185,9 @@ export default function CabinPage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              {BOOKING_CTA.title}
+              {booking.title}
             </h2>
-            <p className="text-xl mb-8">{BOOKING_CTA.description}</p>
+            <p className="text-xl mb-8">{booking.description}</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
               <a
@@ -212,7 +196,7 @@ export default function CabinPage() {
                 rel="noopener noreferrer"
                 className="btn-primary !bg-white !text-caribe hover:!bg-perla text-lg px-10 py-5 shadow-2xl"
               >
-                {BOOKING_CTA.whatsappText}
+                {booking.whatsappText}
               </a>
               <a
                 href={CONTACT.airbnb}
@@ -221,7 +205,7 @@ export default function CabinPage() {
                 className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5 inline-flex items-center gap-3"
               >
                 <Image src="/images/airbnb.png" alt="" width={28} height={28} className="object-contain" />
-                {BOOKING_CTA.airbnbText}
+                {booking.airbnbText}
               </a>
               <a
                 href={CONTACT.booking}
@@ -230,12 +214,12 @@ export default function CabinPage() {
                 className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5 inline-flex items-center gap-3"
               >
                 <Image src="/images/booking.png" alt="" width={28} height={28} className="rounded object-contain" />
-                {BOOKING_CTA.bookingText}
+                {booking.bookingText}
               </a>
             </div>
 
             <p className="text-sm text-perla/90 mb-3">
-              {BOOKING_CTA.directBookingNote}
+              {booking.directBookingNote}
             </p>
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
               <svg className="w-4 h-4" viewBox="0 0 397.7 311.7" fill="none">
@@ -248,7 +232,7 @@ export default function CabinPage() {
                   <linearGradient id="sol-c" x1="0" y1="0" x2="397.7" y2="311.7" gradientUnits="userSpaceOnUse"><stop stopColor="#9945FF"/><stop offset="1" stopColor="#14F195"/></linearGradient>
                 </defs>
               </svg>
-              <span className="text-xs font-medium text-perla/90">{BOOKING_CTA.cryptoNote}</span>
+              <span className="text-xs font-medium text-perla/90">{booking.cryptoNote}</span>
             </div>
           </motion.div>
         </div>
@@ -257,10 +241,10 @@ export default function CabinPage() {
       {/* Back to Home */}
       <section className="py-12 bg-perla text-center">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="inline-flex items-center gap-2 text-caribe hover:text-bronze transition-colors font-medium"
         >
-          <span>←</span> Back to Home
+          <span>←</span> {dict.common.backToHome}
         </Link>
       </section>
     </div>

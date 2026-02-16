@@ -3,12 +3,16 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { NAVIGATION, SITE_CONFIG } from "@/lib/constants";
+import { ROUTES, SITE_CONFIG } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { dict, locale } = useDictionary();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +22,14 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const otherLocale = locale === "en" ? "es" : "en";
+  const switchLocalePath = pathname.replace(`/${locale}`, `/${otherLocale}`);
+
+  const navItems = ROUTES.map((route) => ({
+    name: dict.nav[route.key as keyof typeof dict.nav] || route.key,
+    href: `/${locale}${route.href}`,
+  }));
 
   return (
     <header
@@ -30,7 +42,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href={`/${locale}`} className="flex items-center">
             <div className="relative h-14 w-14 md:h-16 md:w-16">
               <Image
                 src={isScrolled ? "/images/logo.png" : "/images/logo-white.png"}
@@ -51,9 +63,9 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {NAVIGATION.slice(0, -1).map((item) => (
+            {navItems.slice(0, -1).map((item) => (
               <Link
-                key={item.name}
+                key={item.href}
                 href={item.href}
                 className={`font-medium transition-colors hover:text-bronze ${
                   isScrolled ? "text-oscuro" : "text-perla text-shadow"
@@ -62,13 +74,26 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+
+            {/* Language Toggle */}
             <Link
-              href="/contact"
+              href={switchLocalePath}
+              className={`font-medium text-sm px-3 py-1 rounded-full border transition-colors ${
+                isScrolled
+                  ? "border-caribe text-caribe hover:bg-caribe hover:text-perla"
+                  : "border-perla text-perla hover:bg-perla/20"
+              }`}
+            >
+              {otherLocale.toUpperCase()}
+            </Link>
+
+            <Link
+              href={`/${locale}/contact`}
               className={`btn-primary ${
                 !isScrolled && "!bg-bronze hover:!bg-bronze-dark"
               }`}
             >
-              Book Now
+              {dict.nav.bookNow}
             </Link>
           </div>
 
@@ -108,9 +133,9 @@ export default function Header() {
               className="lg:hidden bg-perla rounded-b-2xl shadow-xl overflow-hidden"
             >
               <div className="px-4 py-6 space-y-4">
-                {NAVIGATION.map((item) => (
+                {navItems.map((item) => (
                   <Link
-                    key={item.name}
+                    key={item.href}
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block text-oscuro hover:text-bronze font-medium py-2"
@@ -119,11 +144,18 @@ export default function Header() {
                   </Link>
                 ))}
                 <Link
-                  href="/contact"
+                  href={switchLocalePath}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-caribe hover:text-bronze font-medium py-2"
+                >
+                  {otherLocale === "en" ? "English" : "Español"}
+                </Link>
+                <Link
+                  href={`/${locale}/contact`}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block btn-primary text-center"
                 >
-                  Book Now
+                  {dict.nav.bookNow}
                 </Link>
               </div>
             </motion.div>

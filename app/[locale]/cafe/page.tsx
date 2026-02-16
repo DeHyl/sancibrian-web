@@ -3,9 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { HANGAR_CAFE, CONTACT } from "@/lib/constants";
+import { CAFE_IMAGES, CONTACT } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function CafePage() {
+  const { dict, locale } = useDictionary();
+  const t = dict.cafe;
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -28,10 +32,10 @@ export default function CafePage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-perla text-shadow-lg mb-4">
-              {HANGAR_CAFE.title}
+              {t.title}
             </h1>
             <p className="text-2xl md:text-3xl text-arena font-medium text-shadow">
-              {HANGAR_CAFE.subtitle}
+              {t.subtitle}
             </p>
           </motion.div>
         </div>
@@ -47,11 +51,11 @@ export default function CafePage() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-xl md:text-2xl text-oscuro leading-relaxed mb-8">
-              {HANGAR_CAFE.description}
+              {t.description}
             </p>
             <div className="inline-block bg-bronze/10 px-6 py-3 rounded-full">
               <p className="text-bronze font-bold text-lg">
-                Open 24/7 for Guests
+                {t.open247}
               </p>
             </div>
           </motion.div>
@@ -68,11 +72,11 @@ export default function CafePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-12">
-              What We Offer
+              {t.whatWeOffer}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {HANGAR_CAFE.offerings.map((offering, index) => (
+              {t.offerings.map((offering: string, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -102,10 +106,10 @@ export default function CafePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-12">
-              The Space
+              {t.theSpace}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {HANGAR_CAFE.images.map((image, index) => (
+              {CAFE_IMAGES.images.map((image, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -137,80 +141,40 @@ export default function CafePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-12">
-              Menu Highlights
+              {t.menuHighlights}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Coffee */}
               <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/food/cappuccino.webp"
-                    alt="Cappuccino"
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src="/images/food/cappuccino.webp" alt="Cappuccino" fill className="object-cover" />
                 </div>
-                <h3 className="text-xl font-bold text-caribe mb-2">
-                  Premium Coffee
-                </h3>
-                <p className="text-oscuro">
-                  Cappuccino, espresso, and more from Colombian beans
-                </p>
+                <h3 className="text-xl font-bold text-caribe mb-2">{t.premiumCoffee}</h3>
+                <p className="text-oscuro">{t.premiumCoffeeDesc}</p>
               </div>
 
-              {/* Breakfast */}
               <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/food/breakfast.webp"
-                    alt="Breakfast"
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src="/images/food/breakfast.webp" alt="Breakfast" fill className="object-cover" />
                 </div>
-                <h3 className="text-xl font-bold text-caribe mb-2">
-                  Fresh Breakfast
-                </h3>
-                <p className="text-oscuro">
-                  Traditional and international breakfast options
-                </p>
+                <h3 className="text-xl font-bold text-caribe mb-2">{t.freshBreakfast}</h3>
+                <p className="text-oscuro">{t.freshBreakfastDesc}</p>
               </div>
 
-              {/* Arepas */}
               <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/food/arepas.webp"
-                    alt="Arepas"
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src="/images/food/arepas.webp" alt="Arepas" fill className="object-cover" />
                 </div>
-                <h3 className="text-xl font-bold text-caribe mb-2">
-                  Colombian Arepas
-                </h3>
-                <p className="text-oscuro">
-                  Authentic arepas with various toppings
-                </p>
+                <h3 className="text-xl font-bold text-caribe mb-2">{t.colombianArepas}</h3>
+                <p className="text-oscuro">{t.colombianArepasDesc}</p>
               </div>
 
-              {/* Fresh Fruit */}
               <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image
-                    src="/images/food/fruit.webp"
-                    alt="Fresh Fruit"
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src="/images/food/fruit.webp" alt="Fresh Fruit" fill className="object-cover" />
                 </div>
-                <h3 className="text-xl font-bold text-caribe mb-2">
-                  Tropical Fruits
-                </h3>
-                <p className="text-oscuro">
-                  Fresh local fruits and smoothies
-                </p>
+                <h3 className="text-xl font-bold text-caribe mb-2">{t.tropicalFruits}</h3>
+                <p className="text-oscuro">{t.tropicalFruitsDesc}</p>
               </div>
             </div>
           </motion.div>
@@ -227,63 +191,39 @@ export default function CafePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-12">
-              Perfect for Remote Work
+              {t.perfectForRemoteWork}
             </h2>
 
             <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-bold text-caribe mb-4">
-                    Work Amenities
-                  </h3>
+                  <h3 className="text-xl font-bold text-caribe mb-4">{t.workAmenities}</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <span className="text-bronze text-xl mt-1">•</span>
-                      <span className="text-oscuro">Starlink high-speed internet</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-bronze text-xl mt-1">•</span>
-                      <span className="text-oscuro">24/7 electricity with backup</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-bronze text-xl mt-1">•</span>
-                      <span className="text-oscuro">Comfortable work desks</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-bronze text-xl mt-1">•</span>
-                      <span className="text-oscuro">Ocean view workspace</span>
-                    </li>
+                    {t.workAmenitiesList.map((item: string, i: number) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="text-bronze text-xl mt-1">•</span>
+                        <span className="text-oscuro">{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-bold text-caribe mb-4">
-                    Comfort Features
-                  </h3>
+                  <h3 className="text-xl font-bold text-caribe mb-4">{t.comfortFeatures}</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <span className="text-bronze text-xl mt-1">•</span>
-                      <span className="text-oscuro">Air conditioning</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-bronze text-xl mt-1">•</span>
-                      <span className="text-oscuro">Unlimited coffee and tea</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-bronze text-xl mt-1">•</span>
-                      <span className="text-oscuro">Quiet atmosphere</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-bronze text-xl mt-1">•</span>
-                      <span className="text-oscuro">Snacks available all day</span>
-                    </li>
+                    {t.comfortFeaturesList.map((item: string, i: number) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="text-bronze text-xl mt-1">•</span>
+                        <span className="text-oscuro">{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
 
               <div className="mt-8 pt-8 border-t border-arena text-center">
                 <p className="text-oscuro text-lg italic">
-                  "Work from paradise without compromising on connectivity or comfort"
+                  &ldquo;{t.workQuote}&rdquo;
                 </p>
               </div>
             </div>
@@ -301,10 +241,10 @@ export default function CafePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Experience Hangar Café
+              {t.experienceCta}
             </h2>
             <p className="text-xl mb-8">
-              Complimentary access for all cabin guests. Book your stay today!
+              {t.experienceCtaDesc}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -314,13 +254,13 @@ export default function CafePage() {
                 rel="noopener noreferrer"
                 className="btn-primary !bg-white !text-caribe hover:!bg-perla text-lg px-10 py-5 shadow-2xl"
               >
-                Book Your Stay
+                {dict.booking.whatsappText}
               </a>
               <Link
-                href="/cabin"
+                href={`/${locale}/cabin`}
                 className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5"
               >
-                See The Cabin
+                {t.seeTheCabin}
               </Link>
             </div>
           </motion.div>
@@ -330,10 +270,10 @@ export default function CafePage() {
       {/* Back to Home */}
       <section className="py-12 bg-perla text-center">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="inline-flex items-center gap-2 text-caribe hover:text-bronze transition-colors font-medium"
         >
-          <span>←</span> Back to Home
+          <span>←</span> {dict.common.backToHome}
         </Link>
       </section>
     </div>

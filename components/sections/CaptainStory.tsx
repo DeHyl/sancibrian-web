@@ -3,11 +3,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { CAPTAIN_STORY } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function CaptainStory() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const { dict } = useDictionary();
+  const t = dict.captainStory;
 
   return (
     <section ref={ref} className="section-container bg-arena">
@@ -23,7 +25,7 @@ export default function CaptainStory() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          {CAPTAIN_STORY.title}
+          {t.title}
         </motion.h2>
 
         <motion.p
@@ -32,7 +34,7 @@ export default function CaptainStory() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          {CAPTAIN_STORY.subtitle}
+          {t.subtitle}
         </motion.p>
 
         <motion.p
@@ -41,7 +43,7 @@ export default function CaptainStory() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          {CAPTAIN_STORY.story}
+          {t.story}
         </motion.p>
 
         <motion.blockquote
@@ -50,7 +52,7 @@ export default function CaptainStory() {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          {CAPTAIN_STORY.quote}
+          {t.quote}
         </motion.blockquote>
       </motion.div>
     </section>

@@ -3,9 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { HERO, CONTACT } from "@/lib/constants";
+import { HERO_IMAGES, CONTACT } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function Hero() {
+  const { dict, locale } = useDictionary();
+  const t = dict.hero;
+
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Video */}
@@ -17,7 +21,7 @@ export default function Hero() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={HERO.heroVideo} type="video/mp4" />
+          <source src={HERO_IMAGES.heroVideo} type="video/mp4" />
         </video>
         <div className="gradient-overlay" />
       </div>
@@ -52,7 +56,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            {HERO.headline}
+            {t.headline}
           </motion.h1>
 
           <motion.p
@@ -61,7 +65,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {HERO.subheadline}
+            {t.subheadline}
           </motion.p>
 
           <motion.p
@@ -70,7 +74,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            {HERO.description}
+            {t.description}
           </motion.p>
 
           <motion.div
@@ -85,13 +89,13 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="btn-primary text-lg px-10 py-5 shadow-2xl"
             >
-              {HERO.cta}
+              {t.cta}
             </a>
             <Link
-              href="/cabin"
+              href={`/${locale}/cabin`}
               className="btn-outline text-lg px-10 py-5 !text-perla !border-perla hover:!bg-perla/10 backdrop-blur-sm"
             >
-              {HERO.ctaSecondary}
+              {t.ctaSecondary}
             </Link>
           </motion.div>
         </motion.div>

@@ -3,9 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { HOW_TO_GET_THERE, CONTACT } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
+import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function HowToGetHerePage() {
+  const { dict, locale } = useDictionary();
+  const t = dict.howToGetHere;
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -13,7 +17,7 @@ export default function HowToGetHerePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/sapzurro/path.jpg"
-            alt="Path to Sapzurro"
+            alt={t.title}
             fill
             className="object-cover"
             priority
@@ -28,10 +32,10 @@ export default function HowToGetHerePage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-perla text-shadow-lg mb-4">
-              {HOW_TO_GET_THERE.title}
+              {t.title}
             </h1>
             <p className="text-2xl md:text-3xl text-arena font-medium text-shadow">
-              {HOW_TO_GET_THERE.subtitle}
+              {t.subtitle}
             </p>
           </motion.div>
         </div>
@@ -47,9 +51,7 @@ export default function HowToGetHerePage() {
             transition={{ duration: 0.6 }}
             className="text-lg md:text-xl text-oscuro leading-relaxed"
           >
-            Sapzurro is accessible only by boat, making it a true hidden paradise.
-            The journey is part of the adventure! We can help coordinate your transportation
-            from any starting point.
+            {t.intro}
           </motion.p>
         </div>
       </section>
@@ -64,10 +66,10 @@ export default function HowToGetHerePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-12">
-              Routes to Sapzurro
+              {t.routesTitle}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {HOW_TO_GET_THERE.routes.map((route, index) => (
+              {t.routes.map((route: { from: string; steps: string[]; duration: string; note?: string }, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -78,7 +80,7 @@ export default function HowToGetHerePage() {
                 >
                   <div className="flex items-start justify-between mb-6">
                     <h3 className="text-2xl font-display font-bold text-caribe">
-                      From {route.from}
+                      {t.from} {route.from}
                     </h3>
                     <span className="text-sm font-medium text-bronze bg-bronze/10 px-3 py-1 rounded-full">
                       {route.duration}
@@ -86,7 +88,7 @@ export default function HowToGetHerePage() {
                   </div>
 
                   <div className="space-y-4 mb-6">
-                    {route.steps.map((step, stepIndex) => (
+                    {route.steps.map((step: string, stepIndex: number) => (
                       <div key={stepIndex} className="flex items-start gap-3">
                         <div className="flex-shrink-0 w-8 h-8 bg-caribe text-white rounded-full flex items-center justify-center font-bold text-sm">
                           {stepIndex + 1}
@@ -99,7 +101,7 @@ export default function HowToGetHerePage() {
                   {route.note && (
                     <div className="mt-6 pt-6 border-t border-arena">
                       <p className="text-sm text-oscuro/70 italic">
-                        <span className="font-semibold">Note:</span> {route.note}
+                        <span className="font-semibold">{t.note}</span> {route.note}
                       </p>
                     </div>
                   )}
@@ -120,11 +122,11 @@ export default function HowToGetHerePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-12">
-              Essential Travel Tips
+              {t.travelTipsTitle}
             </h2>
             <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
               <div className="space-y-6">
-                {HOW_TO_GET_THERE.tips.map((tip, index) => (
+                {t.tips.map((tip: string, index: number) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
@@ -153,11 +155,10 @@ export default function HowToGetHerePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-oscuro text-center mb-8">
-              Where is Sapzurro?
+              {t.mapTitle}
             </h2>
             <p className="text-lg text-oscuro text-center mb-12 max-w-3xl mx-auto">
-              Located in the Darién region of Colombia, right at the border with Panama.
-              Sapzurro sits where the jungle meets the Caribbean Sea.
+              {t.mapDescription}
             </p>
 
             <div className="bg-white p-4 rounded-lg shadow-lg">
@@ -177,15 +178,15 @@ export default function HowToGetHerePage() {
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="bg-white p-6 rounded-lg shadow">
                 <div className="text-3xl font-bold text-caribe mb-2">20 min</div>
-                <p className="text-oscuro">walk to Panama</p>
+                <p className="text-oscuro">{t.walkToPanama}</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow">
                 <div className="text-3xl font-bold text-caribe mb-2">10 min</div>
-                <p className="text-oscuro">boat to Capurganá</p>
+                <p className="text-oscuro">{t.boatToCapurgana}</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow">
                 <div className="text-3xl font-bold text-caribe mb-2">1.5 hrs</div>
-                <p className="text-oscuro">boat from Necoclí</p>
+                <p className="text-oscuro">{t.boatFromNecoclí}</p>
               </div>
             </div>
           </motion.div>
@@ -202,11 +203,10 @@ export default function HowToGetHerePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Need Help Planning Your Trip?
+              {t.needHelp}
             </h2>
             <p className="text-xl mb-8">
-              We can help coordinate your entire journey from door to door.
-              Get personalized travel advice and transportation arrangements.
+              {t.needHelpDesc}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -216,18 +216,18 @@ export default function HowToGetHerePage() {
                 rel="noopener noreferrer"
                 className="btn-primary !bg-white !text-caribe hover:!bg-perla text-lg px-10 py-5 shadow-2xl"
               >
-                WhatsApp Us for Help
+                {t.whatsappHelp}
               </a>
               <a
                 href={`mailto:${CONTACT.email}`}
                 className="btn-outline !border-white !text-white hover:!bg-white/10 text-lg px-10 py-5"
               >
-                Email Us
+                {t.emailUs}
               </a>
             </div>
 
             <p className="text-sm text-perla/90 mt-6">
-              We respond within 24 hours • We speak English & Spanish
+              {t.responseTime}
             </p>
           </motion.div>
         </div>
@@ -236,10 +236,10 @@ export default function HowToGetHerePage() {
       {/* Back to Home */}
       <section className="py-12 bg-perla text-center">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="inline-flex items-center gap-2 text-caribe hover:text-bronze transition-colors font-medium"
         >
-          <span>←</span> Back to Home
+          <span>←</span> {dict.common.backToHome}
         </Link>
       </section>
     </div>
