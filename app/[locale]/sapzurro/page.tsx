@@ -153,15 +153,15 @@ export default function SapzurroPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
                   <div className="text-4xl mb-2">⚓</div>
-                  <p className="font-bold">Safe Harbor</p>
+                  <p className="font-bold">{t.safeHarbor}</p>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl mb-2">🛜</div>
-                  <p className="font-bold">Starlink WiFi</p>
+                  <p className="font-bold">{t.starlinkWifi}</p>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl mb-2">🇨🇴</div>
-                  <p className="font-bold">Immigration Available</p>
+                  <p className="font-bold">{t.immigrationAvailable}</p>
                 </div>
               </div>
             </div>

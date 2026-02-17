@@ -150,7 +150,8 @@
         "text": "Increíble escala en nuestro viaje en velero desde San Blas a Cartagena. La cabaña es hermosa, la comida increíble, ¡y la temática de aviación es súper única!",
         "platform": "TripAdvisor"
       }
-    ]
+    ],
+    "via": "vía"
   },
   "faq": {
     "title": "Preguntas Frecuentes",
@@ -207,7 +208,10 @@
       "Aguas cristalinas perfectas para snorkeling",
       "Escala estratégica para veleros San Blas-Cartagena"
     ],
-    "strategicLocation": "Perfecto para veleros que viajan entre las Islas de San Blas (Panamá) y Cartagena (Colombia). Sapzurro ofrece un puerto seguro, comodidades modernas y hospitalidad colombiana en el cruce de dos países."
+    "strategicLocation": "Perfecto para veleros que viajan entre las Islas de San Blas (Panamá) y Cartagena (Colombia). Sapzurro ofrece un puerto seguro, comodidades modernas y hospitalidad colombiana en el cruce de dos países.",
+    "safeHarbor": "Puerto Seguro",
+    "starlinkWifi": "Starlink WiFi",
+    "immigrationAvailable": "Migración Disponible"
   },
   "activities": {
     "heroTitle": "Aventuras Te Esperan",

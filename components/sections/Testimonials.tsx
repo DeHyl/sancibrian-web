@@ -55,7 +55,7 @@ export default function Testimonials() {
                 {testimonial.location}
               </p>
               <p className="text-xs text-bronze mt-1">
-                via {testimonial.platform}
+                {t.via} {testimonial.platform}
               </p>
             </div>
           </motion.div>

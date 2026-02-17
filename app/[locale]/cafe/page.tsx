@@ -120,7 +120,7 @@ export default function CafePage() {
                 >
                   <Image
                     src={image}
-                    alt={`Hangar Café ${index + 1}`}
+                    alt={`${t.title} ${index + 1}`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
