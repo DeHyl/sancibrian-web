@@ -53,7 +53,7 @@ export default function Header() {
               />
             </div>
             <span
-              className={`ml-3 text-lg md:text-xl font-display font-bold transition-colors hidden sm:block ${
+              className={`ml-3 text-base md:text-lg font-display font-bold transition-colors hidden sm:block ${
                 isScrolled ? "text-caribe" : "text-perla text-shadow"
               }`}
             >
@@ -62,12 +62,12 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-5">
             {navItems.slice(0, -1).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-medium transition-colors hover:text-bronze ${
+                className={`text-sm font-medium transition-colors hover:text-bronze ${
                   isScrolled ? "text-oscuro" : "text-perla text-shadow"
                 }`}
               >
