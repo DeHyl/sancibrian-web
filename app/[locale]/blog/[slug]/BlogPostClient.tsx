@@ -54,7 +54,7 @@ const mdxComponents = {
   img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      className="rounded-xl my-6 w-full"
+      className="rounded-xl my-6 max-w-full mx-auto block"
       alt={props.alt ?? ""}
       {...props}
     />
