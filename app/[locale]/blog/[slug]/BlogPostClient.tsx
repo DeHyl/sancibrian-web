@@ -59,6 +59,19 @@ const mdxComponents = {
       {...props}
     />
   ),
+  Video: (props: { src: string; poster?: string }) => (
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      controls
+      className="rounded-xl my-6 w-full"
+      poster={props.poster}
+    >
+      <source src={props.src} type="video/mp4" />
+    </video>
+  ),
 };
 
 interface BlogPostClientProps {
