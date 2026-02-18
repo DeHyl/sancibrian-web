@@ -58,6 +58,32 @@ export default function SapzurroPage() {
         </div>
       </section>
 
+      {/* Drone Video */}
+      <section className="bg-oscuro">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full aspect-video"
+              poster="/images/sapzurro/aerial-border.jpg"
+            >
+              <source
+                src="/images/sapzurro/drone-sapzurro.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Highlights */}
       <section className="py-20 bg-arena-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
