@@ -242,7 +242,7 @@
     "routes": [
       {
         "from": "Medellín (via Apartadó)",
-        "steps": ["Flight to Apartadó (45 min) or bus (8h)", "Shared van to Necoclí (2.5h)", "Speedboat to Sapzurro (1.5h)"],
+        "steps": ["Flight to Apartadó (45 min) or bus (8h)", "Shared van to Turbo (1.5h) or Necoclí (2.5h)", "Speedboat to Sapzurro (1.5-2h)"],
         "duration": "~5-6 hours total (by air)"
       },
       {
@@ -253,13 +253,19 @@
       },
       {
         "from": "Bogotá",
-        "steps": ["Flight to Montería or Apartadó (1.5h)", "Ground transport to Turbo/Necoclí (2-3h)", "Speedboat to Sapzurro (1.5h)"],
+        "steps": ["Flight to Montería or Apartadó (1.5h)", "Ground transport to Turbo (1.5-2h) or Necoclí (2-3h)", "Speedboat to Sapzurro (1.5-2h)"],
         "duration": "~6-7 hours total"
       },
       {
         "from": "Cartagena",
-        "steps": ["Bus to Montería (6h) or flight (45 min)", "Transport to Necoclí (3h)", "Boat to Sapzurro (1.5h)"],
+        "steps": ["Bus to Montería (6h) or flight (45 min)", "Transport to Turbo (2h) or Necoclí (3h)", "Boat to Sapzurro (1.5-2h)"],
         "duration": "Variable"
+      },
+      {
+        "from": "Turbo",
+        "steps": ["Go to the maritime terminal in Turbo", "Speedboat to Sapzurro (direct, ~2h)", "Boats depart daily in the morning"],
+        "duration": "~2 hours",
+        "note": "Turbo is an alternative departure point to Necoclí. Multiple boat companies operate daily routes."
       },
       {
         "from": "San Blas Islands (Panama)",

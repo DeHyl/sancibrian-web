@@ -242,7 +242,7 @@
     "routes": [
       {
         "from": "Medellín (vía Apartadó)",
-        "steps": ["Vuelo a Apartadó (45 min) o bus (8h)", "Van compartida a Necoclí (2.5h)", "Lancha rápida a Sapzurro (1.5h)"],
+        "steps": ["Vuelo a Apartadó (45 min) o bus (8h)", "Van compartida a Turbo (1.5h) o Necoclí (2.5h)", "Lancha rápida a Sapzurro (1.5-2h)"],
         "duration": "~5-6 horas en total (por aire)"
       },
       {
@@ -253,13 +253,19 @@
       },
       {
         "from": "Bogotá",
-        "steps": ["Vuelo a Montería o Apartadó (1.5h)", "Transporte terrestre a Turbo/Necoclí (2-3h)", "Lancha rápida a Sapzurro (1.5h)"],
+        "steps": ["Vuelo a Montería o Apartadó (1.5h)", "Transporte terrestre a Turbo (1.5-2h) o Necoclí (2-3h)", "Lancha rápida a Sapzurro (1.5-2h)"],
         "duration": "~6-7 horas en total"
       },
       {
         "from": "Cartagena",
-        "steps": ["Bus a Montería (6h) o vuelo (45 min)", "Transporte a Necoclí (3h)", "Lancha a Sapzurro (1.5h)"],
+        "steps": ["Bus a Montería (6h) o vuelo (45 min)", "Transporte a Turbo (2h) o Necoclí (3h)", "Lancha a Sapzurro (1.5-2h)"],
         "duration": "Variable"
+      },
+      {
+        "from": "Turbo",
+        "steps": ["Ir al terminal marítimo de Turbo", "Lancha rápida a Sapzurro (directo, ~2h)", "Salen lanchas diariamente en la mañana"],
+        "duration": "~2 horas",
+        "note": "Turbo es un punto de partida alternativo a Necoclí. Varias empresas de lanchas operan rutas diarias."
       },
       {
         "from": "Islas de San Blas (Panamá)",
