@@ -11,6 +11,7 @@
     "activities": "Activities",
     "howToGetHere": "How to Get Here",
     "contact": "Contact",
+    "blog": "Captain's Log",
     "bookNow": "Book Now"
   },
   "hero": {
@@ -328,6 +329,14 @@
   "whatsapp": {
     "tooltip": "Chat with us!",
     "ariaLabel": "Contact us on WhatsApp"
+  },
+  "blog": {
+    "title": "The Captain's Log",
+    "description": "Stories, travel guides, and tales from the Caribbean coast of Colombia.",
+    "readMore": "Read More",
+    "noPosts": "No stories yet. Check back soon!",
+    "minRead": "min read",
+    "backToList": "Back to all stories"
   },
   "common": {
     "backToHome": "Back to Home"

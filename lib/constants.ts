@@ -87,5 +87,6 @@ export const ROUTES = [
   { key: "sapzurro", href: "/sapzurro" },
   { key: "activities", href: "/activities" },
   { key: "howToGetHere", href: "/how-to-get-here" },
+  { key: "blog", href: "/blog" },
   { key: "contact", href: "/contact" },
 ];

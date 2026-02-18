@@ -11,6 +11,7 @@
     "activities": "Actividades",
     "howToGetHere": "Cómo Llegar",
     "contact": "Contacto",
+    "blog": "Bitácora",
     "bookNow": "Reservar"
   },
   "hero": {
@@ -328,6 +329,14 @@
   "whatsapp": {
     "tooltip": "¡Chatea con nosotros!",
     "ariaLabel": "Contáctanos por WhatsApp"
+  },
+  "blog": {
+    "title": "Bitácora del Capitán",
+    "description": "Historias, guías de viaje y relatos desde la costa caribeña de Colombia.",
+    "readMore": "Leer Más",
+    "noPosts": "Aún no hay historias. ¡Vuelve pronto!",
+    "minRead": "min de lectura",
+    "backToList": "Volver a todas las historias"
   },
   "common": {
     "backToHome": "Volver al Inicio"
