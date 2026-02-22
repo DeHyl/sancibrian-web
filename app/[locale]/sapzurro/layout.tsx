@@ -2,22 +2,25 @@ import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Sapzurro | The Caribbean's Best-Kept Secret",
+  title: "Sapzurro, Colombia — The Caribbean's Best-Kept Secret | Sancibrian",
   description:
-    "Discover Sapzurro, Colombia's hidden paradise at the Panama border. Pristine beaches, Darién biodiversity, and the perfect stopover for San Blas-Cartagena sailors.",
+    "Sapzurro Colombia: pristine beaches, Darién jungle & Colombia-Panama border. Perfect San Blas to Cartagena stopover. Discover the Darién's most beautiful hidden village.",
   keywords: [
     "Sapzurro Colombia",
     "Sapzurro Darién",
     "Sapzurro beach",
     "Caribbean Colombia",
-    "Chocó Colombia",
-    "San Blas to Cartagena",
+    "Chocó Caribe Colombia",
+    "San Blas to Cartagena stopover",
     "Darién Gap tourism",
+    "Capurganá Sapzurro Colombia",
+    "frontera Colombia Panamá playa",
+    "Golfo de Urabá turismo",
   ],
   openGraph: {
-    title: "About Sapzurro | The Caribbean's Best-Kept Secret",
+    title: "Sapzurro, Colombia — The Caribbean's Best-Kept Secret | Sancibrian",
     description:
-      "Pristine beaches, jungle biodiversity, and Caribbean paradise at the Colombia-Panama border.",
+      "Pristine Caribbean beaches, Darién jungle & Colombia-Panama border. The perfect San Blas to Cartagena stopover.",
     url: `${SITE_CONFIG.url}/sapzurro`,
     images: [
       {

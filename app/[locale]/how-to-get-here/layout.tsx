@@ -2,23 +2,25 @@ import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "How to Get to Sapzurro | Cabaña Sancibrian",
+  title: "How to Get to Sapzurro 2026 — All Routes & Prices | Sancibrian",
   description:
-    "Complete travel guide to reach Sapzurro, Colombia. Routes from Medellín, Bogotá, Cartagena, and San Blas Islands. We help coordinate your entire journey.",
+    "How to get to Sapzurro 2026: flights via Acandí (2.5h), boats from Turbo & Necoclí, overnight bus. Updated routes and prices from Medellín, Bogotá and Cartagena.",
   keywords: [
     "how to get to Sapzurro",
-    "Sapzurro travel guide",
     "como llegar a Sapzurro",
+    "Sapzurro travel guide 2026",
+    "Medellín to Sapzurro",
+    "vuelo Acandí Medellín",
+    "lancha Turbo Capurganá",
+    "boat to Sapzurro",
     "Sapzurro transportation",
     "Necoclí to Sapzurro",
-    "boat to Sapzurro",
-    "Medellín to Sapzurro",
     "San Blas to Cartagena route",
   ],
   openGraph: {
-    title: "How to Get to Sapzurro | Cabaña Sancibrian",
+    title: "How to Get to Sapzurro 2026 — All Routes & Prices | Sancibrian",
     description:
-      "Complete travel guide with routes from Medellín, Bogotá, Cartagena, and San Blas Islands.",
+      "Flights via Acandí (2.5h), boats from Turbo, bus from Medellín. All routes and 2026 prices for getting to Sapzurro, Colombia.",
     url: `${SITE_CONFIG.url}/how-to-get-here`,
     images: [
       {
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Get to Sapzurro | Cabaña Sancibrian",
+    title: "How to Get to Sapzurro 2026 — All Routes & Prices | Sancibrian",
     description:
-      "Complete travel guide to reach Sapzurro, Colombia from anywhere.",
+      "Flights via Acandí (2.5h), boats from Turbo, bus from Medellín. All 2026 routes and prices to Sapzurro, Colombia.",
     images: ["/images/sapzurro/path.jpg"],
   },
 };

@@ -2,21 +2,23 @@ import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Cabaña Sancibrian",
+  title: "Book & Contact Cabaña Sancibrian | Sapzurro, Colombia",
   description:
-    "Contact Cabaña Sancibrian for reservations and inquiries. WhatsApp, email, or social media. We respond quickly in English & Spanish.",
+    "Reserve Cabaña Sancibrian in Sapzurro by WhatsApp, Airbnb or Booking.com. Best rate guaranteed with direct booking. Fast response in English & Spanish.",
   keywords: [
+    "reservar Cabaña Sancibrian",
+    "book Sapzurro Colombia",
     "contact Cabaña Sancibrian",
-    "Sapzurro reservations",
-    "book Sapzurro",
     "Cabaña Sancibrian WhatsApp",
-    "contacto Sapzurro",
-    "reservas Sapzurro",
+    "Sapzurro reservations",
+    "reservas Sapzurro hospedaje",
+    "contacto Sancibrian Sapzurro",
+    "direct booking Sapzurro",
   ],
   openGraph: {
-    title: "Contact Us | Cabaña Sancibrian",
+    title: "Book & Contact Cabaña Sancibrian | Sapzurro, Colombia",
     description:
-      "Get in touch for reservations and inquiries. Quick response via WhatsApp or email.",
+      "Reserve via WhatsApp, Airbnb or Booking.com. Best rate with direct booking. Fast response in English & Spanish.",
     url: `${SITE_CONFIG.url}/contact`,
     images: [
       {

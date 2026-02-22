@@ -2,22 +2,25 @@ import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Activities in Sapzurro | Things to Do",
+  title: "Things to Do in Sapzurro — Activities & Adventures | Sancibrian",
   description:
-    "Snorkeling, kayaking, hiking to La Miel beach, bird watching, fishing, and more. Discover adventures in Sapzurro and the Colombian Darién.",
+    "Best things to do in Sapzurro: snorkeling, kayaking, hike to La Miel (Panama), bird watching & Capurganá day trips. Adventures in the Colombian Darién from Cabaña Sancibrian.",
   keywords: [
-    "Sapzurro activities",
     "things to do Sapzurro",
+    "Sapzurro activities",
+    "qué hacer en Sapzurro",
     "snorkeling Sapzurro",
-    "La Miel beach hike",
+    "La Miel beach hike Panama",
     "Capurganá day trip",
     "activities Darién Colombia",
     "Sapzurro tours",
+    "actividades Capurganá",
+    "senderismo Darién Colombia",
   ],
   openGraph: {
-    title: "Activities in Sapzurro | Things to Do",
+    title: "Things to Do in Sapzurro — Activities & Adventures | Sancibrian",
     description:
-      "Snorkeling, kayaking, jungle hikes, and more adventures in Caribbean paradise.",
+      "Snorkeling, kayaking, La Miel hike (Panama), bird watching & Capurganá day trips. Adventures in Colombian Caribbean paradise.",
     url: `${SITE_CONFIG.url}/activities`,
     images: [
       {

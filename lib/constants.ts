@@ -7,6 +7,7 @@ export const SITE_CONFIG = {
   keywords: [
     "Sapzurro accommodation",
     "cabana Sapzurro Colombia",
+    "Cabaña Sancibrian",
     "digital nomad Caribbean Colombia",
     "Darien Gap lodging",
     "San Blas to Cartagena stopover",
@@ -14,6 +15,14 @@ export const SITE_CONFIG = {
     "hospedaje Sapzurro",
     "cabaña Sapzurro frente al mar",
     "nómada digital Colombia Caribe",
+    "how to get to Sapzurro",
+    "como llegar a Sapzurro",
+    "Sapzurro vs Capurgana",
+    "things to do Sapzurro",
+    "Capurganá Colombia",
+    "Darién Colombia tourism",
+    "Starlink Sapzurro",
+    "trabajo remoto Caribe Colombia",
   ],
 };
 

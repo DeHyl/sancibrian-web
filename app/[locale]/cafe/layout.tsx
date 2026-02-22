@@ -2,21 +2,24 @@ import type { Metadata } from "next";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Hangar Café & CoWorking | Cabaña Sancibrian",
+  title: "Hangar Café & CoWorking Sapzurro | 24/7 — Cabaña Sancibrian",
   description:
-    "Colombian coffee, fresh breakfast, and 24/7 coworking space with Starlink WiFi. Ocean view workspace in paradise. Perfect for digital nomads.",
+    "Hangar Café — 24/7 Colombian specialty coffee, fresh breakfast & coworking in Sapzurro. Starlink WiFi, ocean views. Free access for all Cabaña Sancibrian guests.",
   keywords: [
     "Hangar Café Sapzurro",
     "coworking Sapzurro",
     "coffee shop Sapzurro",
     "remote work Sapzurro",
     "digital nomad workspace Colombia",
-    "café Sapzurro",
+    "trabajo remoto Caribe Colombia",
+    "café colombiano Sapzurro",
+    "nómada digital Sapzurro",
+    "Starlink coworking Colombia",
   ],
   openGraph: {
-    title: "Hangar Café & CoWorking | Cabaña Sancibrian",
+    title: "Hangar Café & CoWorking Sapzurro | 24/7 — Cabaña Sancibrian",
     description:
-      "Colombian coffee, breakfast, and 24/7 coworking space with ocean views and Starlink WiFi.",
+      "24/7 Colombian coffee, fresh breakfast & Starlink coworking space in Sapzurro. Ocean views included. Free for Sancibrian guests.",
     url: `${SITE_CONFIG.url}/cafe`,
     images: [
       {
