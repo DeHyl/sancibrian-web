@@ -6,6 +6,7 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { useEffect, useState } from "react";
+import remarkGfm from "remark-gfm";
 import type { BlogPost } from "@/lib/blog";
 
 const mdxComponents = {
@@ -118,7 +119,9 @@ export default function BlogPostClient({
   > | null>(null);
 
   useEffect(() => {
-    serialize(post.content).then(setMdxSource);
+    serialize(post.content, {
+      mdxOptions: { remarkPlugins: [remarkGfm] },
+    }).then(setMdxSource);
   }, [post.content]);
 
   return (
