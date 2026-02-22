@@ -175,6 +175,96 @@ export default function CabinPage() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="py-20 bg-oscuro text-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-3">
+              {t.pricing.title}
+            </h2>
+            <p className="text-center text-perla/70 mb-12">{t.pricing.subtitle}</p>
+
+            {/* Season cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              {/* High Season */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-2xl">☀️</span>
+                  <div>
+                    <div className="text-lg font-bold text-perla">{t.pricing.highSeason}</div>
+                    <div className="text-sm text-perla/60">{t.pricing.highSeasonDates}</div>
+                  </div>
+                </div>
+                <div className="text-5xl font-display font-bold text-bronze mb-1">
+                  {t.pricing.highSeasonPrice}
+                </div>
+                <div className="text-sm text-perla/70 mb-1">{t.pricing.currency}</div>
+                <div className="text-sm text-perla/50">{t.pricing.highSeasonUSD}</div>
+              </motion.div>
+
+              {/* Low Season */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-2xl">🌿</span>
+                  <div>
+                    <div className="text-lg font-bold text-perla">{t.pricing.lowSeason}</div>
+                    <div className="text-sm text-perla/60">{t.pricing.lowSeasonDates}</div>
+                  </div>
+                </div>
+                <div className="text-5xl font-display font-bold text-arena mb-1">
+                  {t.pricing.lowSeasonPrice}
+                </div>
+                <div className="text-sm text-perla/70 mb-1">{t.pricing.currency}</div>
+                <div className="text-sm text-perla/50">{t.pricing.lowSeasonUSD}</div>
+              </motion.div>
+            </div>
+
+            {/* What's included */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
+              <h3 className="text-lg font-bold text-perla mb-4">{t.pricing.includes}</h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {t.pricing.includesList.map((item: string, i: number) => (
+                  <li key={i} className="flex items-center gap-3 text-perla/80">
+                    <span className="text-bronze">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Note + direct booking CTA */}
+            <p className="text-center text-perla/60 text-sm mb-6">{t.pricing.note}</p>
+            <div className="text-center">
+              <a
+                href={CONTACT.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-bronze hover:bg-bronze/90 text-white font-bold px-10 py-4 rounded-full transition-colors text-lg shadow-lg"
+              >
+                {t.pricing.bookDirect}
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Booking CTA */}
       <section className="py-20 bg-gradient-to-br from-caribe to-caribe-dark text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

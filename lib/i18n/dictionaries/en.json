@@ -79,7 +79,30 @@
       "24/7 electricity with battery backup",
       "Hot water",
       "Beach access"
-    ]
+    ],
+    "pricing": {
+      "title": "Rates",
+      "subtitle": "All rates are per person, per night. Minimum 2 guests.",
+      "highSeason": "High Season",
+      "lowSeason": "Low Season",
+      "highSeasonDates": "Dec – Mar · Jul – Aug",
+      "lowSeasonDates": "Apr – Jun · Sep – Nov",
+      "highSeasonPrice": "$149,900",
+      "lowSeasonPrice": "$100,000",
+      "currency": "COP / person / night",
+      "highSeasonUSD": "≈ USD $37",
+      "lowSeasonUSD": "≈ USD $25",
+      "includes": "Every rate includes:",
+      "includesList": [
+        "Access to Hangar Café 24/7",
+        "Starlink WiFi",
+        "24/7 electricity (BatX backup)",
+        "Dock pickup on arrival",
+        "Pre-trip logistics support via WhatsApp"
+      ],
+      "note": "Rates may vary on Airbnb and Booking.com. For the best rate, contact us directly.",
+      "bookDirect": "Book Direct (Best Rate)"
+    }
   },
   "cafe": {
     "title": "Hangar Café",
