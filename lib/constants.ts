@@ -82,11 +82,11 @@ export const GALLERY_IMAGES = [
   { url: "/images/sapzurro/aerial-border.jpg", alt: "gallery-aerial-border" },
   { url: "/images/cabin/facade-front.jpg", alt: "gallery-cabin-facade" },
   { url: "/images/sapzurro/beach-2.jpg", alt: "gallery-beach" },
-  { url: "/images/cabin/bath-outdoor.jpg", alt: "gallery-bath" },
+  { url: "/images/cafe/patio.jpg", alt: "gallery-cafe-patio" },
   { url: "/images/sapzurro/playa-bonita-swing.jpg", alt: "gallery-swing" },
-  { url: "/images/cafe/coffee.jpg", alt: "gallery-coffee" },
-  { url: "/images/cabin/terrace.jpg", alt: "gallery-terrace" },
-  { url: "/images/sapzurro/dock.jpg", alt: "gallery-dock" },
+  { url: "/images/cabin/room-1.jpg", alt: "gallery-cabin-room" },
+  { url: "/images/sapzurro/bay-panorama.jpg", alt: "gallery-bay-panorama" },
+  { url: "/images/cabin/bath-outdoor.jpg", alt: "gallery-bath" },
 ];
 
 export const ROUTES = [
