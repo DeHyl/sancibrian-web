@@ -85,10 +85,10 @@
       "subtitle": "All rates are per person, per night. Minimum 2 guests.",
       "highSeason": "High Season",
       "lowSeason": "Low Season",
-      "highSeasonDates": "Dec – Mar · Jul – Aug",
-      "lowSeasonDates": "Apr – Jun · Sep – Nov",
+      "highSeasonDates": "Dec – Apr · Jul – Aug",
+      "lowSeasonDates": "May – Jun · Sep – Nov",
       "highSeasonPrice": "$149,900",
-      "lowSeasonPrice": "$100,000",
+      "lowSeasonPrice": "$99,900",
       "currency": "COP / person / night",
       "highSeasonUSD": "≈ USD $37",
       "lowSeasonUSD": "≈ USD $25",
@@ -195,7 +195,7 @@
       },
       {
         "question": "What's the best time to visit?",
-        "answer": "Sapzurro is beautiful year-round. December-March offers less rain and better weather. April-November has more rain but fewer tourists and greener nature."
+        "answer": "Sapzurro is beautiful year-round. December–April is high season (dry weather + Easter week). July–August is also high season. May–June and September–November are quieter with better prices and lush green scenery."
       },
       {
         "question": "Can I work remotely from the cabin?",
