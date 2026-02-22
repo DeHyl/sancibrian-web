@@ -6,6 +6,7 @@ import { DictionaryProvider } from "@/lib/i18n/DictionaryProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -124,6 +125,9 @@ export default async function LocaleLayout({
       <main className="min-h-screen">{children}</main>
       <Footer />
       <WhatsAppButton />
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
     </DictionaryProvider>
   );
 }
