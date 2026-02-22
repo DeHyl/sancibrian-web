@@ -35,7 +35,7 @@
       { "title": "24/7 Electricity", "description": "Batx battery backup system. One of the few in the entire region with constant power." },
       { "title": "Starlink Internet", "description": "High-speed satellite connection. Perfect for digital nomads and remote work." },
       { "title": "Steps from Playa Bonita", "description": "Direct access to the main beach. Wake up to the sound of waves." },
-      { "title": "Outdoor Bath", "description": "Magical flowers and herbs bath at night. A unique experience under the stars." },
+      { "title": "Outdoor Bath", "description": "Wood-fire heated herbal bath with flowers and plants under the stars — upon request. A truly unique ritual." },
       { "title": "Aviation Theme", "description": "Vintage art and décor paying tribute to Captain Diego's legacy." },
       { "title": "Hangar Café", "description": "Colombian coffee and coworking space on property, available 24/7." },
       { "title": "Netflix + Alexa", "description": "Modern amenities in a remote paradise. Entertainment when you need it." },
@@ -69,7 +69,7 @@
       "Please use biodegradable products to protect our reefs"
     ],
     "amenities": [
-      "Outdoor shower and magical herb bath",
+      "Outdoor shower",
       "Starlink satellite internet",
       "Spacious work desk for remote work",
       "Netflix and Amazon Alexa",
@@ -77,7 +77,7 @@
       "Vintage aviation art and décor",
       "Hand-curated minibar",
       "24/7 electricity with battery backup",
-      "Hot water",
+      "Wood-fire herbal bath (upon request)",
       "Beach access"
     ],
     "pricing": {
@@ -187,7 +187,7 @@
       },
       {
         "question": "What's included in my stay?",
-        "answer": "Accommodation with Starlink WiFi, 24/7 electricity, hot water, premium linens and towels, and access to Hangar Café. Breakfast and other meals available upon request."
+        "answer": "Accommodation with Starlink WiFi, 24/7 electricity, premium linens and towels, and access to Hangar Café. The outdoor herbal bath (wood-fire heated, with flowers and relaxing herbs) is available upon prior request. Breakfast and other meals also available upon request."
       },
       {
         "question": "Is there cell phone signal?",
