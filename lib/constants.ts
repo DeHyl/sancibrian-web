@@ -82,7 +82,7 @@ export const GALLERY_IMAGES = [
   { url: "/images/sapzurro/aerial-border.jpg", alt: "gallery-aerial-border" },
   { url: "/images/cabin/facade-front.jpg", alt: "gallery-cabin-facade" },
   { url: "/images/sapzurro/beach-2.jpg", alt: "gallery-beach" },
-  { url: "/images/cafe/patio.jpg", alt: "gallery-cafe-patio" },
+  { url: "/images/cabin/facade-garden.jpg", alt: "gallery-cabin-garden" },
   { url: "/images/sapzurro/playa-bonita-swing.jpg", alt: "gallery-swing" },
   { url: "/images/cabin/room-1.jpg", alt: "gallery-cabin-room" },
   { url: "/images/sapzurro/bay-panorama.jpg", alt: "gallery-bay-panorama" },
