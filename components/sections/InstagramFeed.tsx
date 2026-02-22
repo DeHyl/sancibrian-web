@@ -8,12 +8,12 @@ import { CONTACT } from "@/lib/constants";
 import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 const INSTAGRAM_POSTS = [
-  "/images/hero/hero-1.jpg",
-  "/images/cabin/facade-front.jpg",
-  "/images/sapzurro/beach-2.jpg",
-  "/images/cafe/coffee.jpg",
-  "/images/cabin/bath-outdoor.jpg",
-  "/images/sapzurro/playa-bonita-swing.jpg",
+  "/images/cabin/cabin-night.jpg",
+  "/images/sapzurro/bay-panorama.jpg",
+  "/images/cabin/facade-garden.jpg",
+  "/images/sapzurro/aerial-border.jpg",
+  "/images/cabin/room-1.jpg",
+  "/images/sapzurro/dock.jpg",
 ];
 
 export default function InstagramFeed() {
