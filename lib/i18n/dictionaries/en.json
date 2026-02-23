@@ -39,7 +39,7 @@
       { "title": "Aviation Theme", "description": "Vintage art and décor paying tribute to Captain Diego's legacy." },
       { "title": "Hangar Café", "description": "Colombian coffee and coworking space on property, available 24/7." },
       { "title": "Netflix + Alexa", "description": "Modern amenities in a remote paradise. Entertainment when you need it." },
-      { "title": "Strategic Location", "description": "Perfect stopover for San Blas to Cartagena sailors." }
+      { "title": "San Blas Gateway", "description": "The fastest departure point to the San Blas Islands (Guna Yala, Panama). All-inclusive 4–5 night expeditions depart directly from Sancibrian." }
     ]
   },
   "cabin": {
@@ -231,9 +231,9 @@
       "Capurganá: Neighboring town with more services",
       "Unique Darién biodiversity",
       "Crystal-clear waters perfect for snorkeling",
-      "Strategic stopover for San Blas-Cartagena sailors"
+      "Fastest departure point to San Blas Islands (Panama)"
     ],
-    "strategicLocation": "Perfect for sailors traveling between San Blas Islands (Panama) and Cartagena (Colombia). Sapzurro offers a safe harbor, modern amenities, and Colombian hospitality at the crossroads of two countries.",
+    "strategicLocation": "Sancibrian is your fastest gateway to the San Blas Islands (Guna Yala, Panama). Join our all-inclusive 4–5 night expeditions with Akua Tour: depart directly from Sapzurro, sleep on 5 pristine private islands, and return to Colombian hospitality. No easier route to paradise exists.",
     "safeHarbor": "Safe Harbor",
     "starlinkWifi": "Starlink WiFi",
     "immigrationAvailable": "Immigration Available"
@@ -241,9 +241,10 @@
   "activities": {
     "heroTitle": "Adventures Await",
     "heroSubtitle": "Things to Do in Sapzurro",
-    "intro": "From jungle hikes to crystal-clear snorkeling, Sapzurro offers unforgettable experiences for every type of traveler.",
+    "intro": "From San Blas island expeditions to jungle hikes and coral reef snorkeling, Sapzurro is your gateway to adventures found nowhere else on Earth.",
     "signatureTitle": "Signature Experiences",
     "items": [
+      { "title": "San Blas Islands Expedition", "description": "The fastest route to the San Blas Islands (Guna Yala, Panama) starts right here. All-inclusive 4–5 night package with Akua Tour: 2 nights in Sapzurro + 2–3 nights on 5 private islands. Immigration, transfers, accommodation, and meals all included. We coordinate everything." },
       { "title": "Snorkeling & Diving at Cabo Tiburón", "description": "Explore vibrant coral reefs at Cabo Tiburón — the first beach on the South American continent. Crystal-clear Caribbean waters with stunning marine life await." },
       { "title": "Hike to La Miel", "description": "20-minute jungle trail to a pristine Panamanian beach. No passport needed — just bring your ID to register at the border post." },
       { "title": "Kayaking", "description": "Paddle along the coastline and discover hidden coves in the turquoise Caribbean waters." },

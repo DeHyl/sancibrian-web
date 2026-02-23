@@ -39,7 +39,7 @@
       { "title": "Temática de Aviación", "description": "Arte y decoración vintage en tributo al legado del Capitán Diego." },
       { "title": "Hangar Café", "description": "Café colombiano y espacio de coworking en la propiedad, disponible 24/7." },
       { "title": "Netflix + Alexa", "description": "Comodidades modernas en un paraíso remoto. Entretenimiento cuando lo necesites." },
-      { "title": "Ubicación Estratégica", "description": "Escala perfecta para veleros de San Blas a Cartagena." }
+      { "title": "Puerta a San Blas", "description": "El punto de partida más rápido a las Islas de San Blas (Guna Yala, Panamá). Expediciones todo incluido de 4–5 noches salen directamente desde Sancibrian." }
     ]
   },
   "cabin": {
@@ -231,9 +231,9 @@
       "Capurganá: pueblo vecino con más servicios",
       "Biodiversidad única del Darién",
       "Aguas cristalinas perfectas para snorkeling",
-      "Escala estratégica para veleros San Blas-Cartagena"
+      "Punto de partida más rápido a las Islas de San Blas (Panamá)"
     ],
-    "strategicLocation": "Perfecto para veleros que viajan entre las Islas de San Blas (Panamá) y Cartagena (Colombia). Sapzurro ofrece un puerto seguro, comodidades modernas y hospitalidad colombiana en el cruce de dos países.",
+    "strategicLocation": "Sancibrian es tu puerta de entrada más rápida a las Islas de San Blas (Guna Yala, Panamá). Únete a nuestras expediciones todo incluido de 4–5 noches con Akua Tour: sal directamente desde Sapzurro, duerme en 5 islas privadas prístinas y regresa a la hospitalidad colombiana. No existe ruta más fácil al paraíso.",
     "safeHarbor": "Puerto Seguro",
     "starlinkWifi": "Starlink WiFi",
     "immigrationAvailable": "Migración Disponible"
@@ -241,9 +241,10 @@
   "activities": {
     "heroTitle": "Aventuras Te Esperan",
     "heroSubtitle": "Qué Hacer en Sapzurro",
-    "intro": "Desde caminatas por la selva hasta snorkeling en aguas cristalinas, Sapzurro ofrece experiencias inolvidables para todo tipo de viajero.",
+    "intro": "Desde expediciones a las Islas de San Blas hasta caminatas por la selva y snorkeling en arrecifes de coral, Sapzurro es tu puerta a aventuras que no encontrarás en ningún otro lugar.",
     "signatureTitle": "Experiencias Destacadas",
     "items": [
+      { "title": "Expedición a las Islas de San Blas", "description": "La ruta más rápida a las Islas de San Blas (Guna Yala, Panamá) comienza aquí mismo. Paquete todo incluido de 4–5 noches con Akua Tour: 2 noches en Sapzurro + 2–3 noches en 5 islas privadas. Migración, traslados, hospedaje y comidas incluidos. Nosotros coordinamos todo." },
       { "title": "Snorkeling y Buceo en Cabo Tiburón", "description": "Explora arrecifes de coral vibrantes en Cabo Tiburón — la primera playa del continente sudamericano. Aguas cristalinas del Caribe con una vida marina impresionante." },
       { "title": "Caminata a La Miel", "description": "Sendero de 20 minutos por la selva hasta una playa prístina panameña. No necesitas pasaporte — solo tu cédula para registrarte en el puesto fronterizo." },
       { "title": "Kayak", "description": "Rema a lo largo de la costa y descubre calas escondidas en las aguas turquesas del Caribe." },

@@ -8,14 +8,15 @@ import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 // Image mapping for each activity index
 const ACTIVITY_IMAGES: Record<number, string> = {
-  0: "/images/activities/snorkeling-cabo-tiburon.jpg", // Snorkeling at Cabo Tiburón
-  1: "/images/sapzurro/path.jpg",                      // Hike to La Miel
-  2: "/images/activities/kayaking.jpg",                 // Kayaking
-  3: "/images/activities/birdwatching.jpg",             // Bird Watching
-  4: "/images/sapzurro/dock.jpg",                       // Sport Fishing
-  5: "/images/sapzurro/playa-bonita-swing.jpg",         // Simply Relax
-  6: "/images/activities/jungle-trek.jpg",              // Trek to Capurganá
-  7: "/images/activities/seafood.jpg",                  // Local Gastronomy
+  0: "/images/activities/san-blas-islands.jpg",         // San Blas Islands Expedition
+  1: "/images/activities/snorkeling-cabo-tiburon.jpg",  // Snorkeling at Cabo Tiburón
+  2: "/images/sapzurro/path.jpg",                       // Hike to La Miel
+  3: "/images/activities/kayaking.jpg",                  // Kayaking
+  4: "/images/activities/birdwatching.jpg",              // Bird Watching
+  5: "/images/sapzurro/dock.jpg",                        // Sport Fishing
+  6: "/images/sapzurro/playa-bonita-swing.jpg",          // Simply Relax
+  7: "/images/activities/jungle-trek.jpg",               // Trek to Capurganá
+  8: "/images/activities/seafood.jpg",                   // Local Gastronomy
 };
 
 export default function ActivitiesPage() {
@@ -117,12 +118,38 @@ export default function ActivitiesPage() {
             </h2>
 
             <div className="space-y-16">
+              {/* San Blas — Hero Feature */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative h-[500px]">
+                  <Image
+                    src="/images/activities/san-blas-islands.jpg"
+                    alt={t.items[0]?.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-oscuro/80 via-oscuro/40 to-transparent" />
+                </div>
+                <div className="absolute inset-0 flex items-center px-8 md:px-16">
+                  <div className="max-w-xl text-white">
+                    <span className="inline-block text-sm font-semibold text-arena uppercase tracking-widest mb-3">
+                      ✈ Signature Experience
+                    </span>
+                    <h3 className="text-4xl md:text-5xl font-display font-bold mb-4 text-shadow-lg">
+                      {t.items[0]?.title}
+                    </h3>
+                    <p className="text-lg leading-relaxed text-perla/90">
+                      {t.items[0]?.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {/* Cabo Tiburón Snorkeling */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
                   <Image
                     src="/images/activities/snorkeling-cabo-tiburon.jpg"
-                    alt={t.items[0]?.title}
+                    alt={t.items[1]?.title}
                     fill
                     className="object-cover"
                   />
@@ -132,10 +159,10 @@ export default function ActivitiesPage() {
                     ★ Featured
                   </span>
                   <h3 className="text-3xl font-display font-bold text-caribe mb-4">
-                    {t.items[0]?.title}
+                    {t.items[1]?.title}
                   </h3>
                   <p className="text-lg text-oscuro leading-relaxed">
-                    {t.items[0]?.description}
+                    {t.items[1]?.description}
                   </p>
                 </div>
               </div>
@@ -147,16 +174,16 @@ export default function ActivitiesPage() {
                     ★ Featured
                   </span>
                   <h3 className="text-3xl font-display font-bold text-caribe mb-4">
-                    {t.items[6]?.title}
+                    {t.items[7]?.title}
                   </h3>
                   <p className="text-lg text-oscuro leading-relaxed">
-                    {t.items[6]?.description}
+                    {t.items[7]?.description}
                   </p>
                 </div>
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl order-1 lg:order-2">
                   <Image
                     src="/images/activities/jungle-trek.jpg"
-                    alt={t.items[6]?.title}
+                    alt={t.items[7]?.title}
                     fill
                     className="object-cover"
                   />
@@ -168,7 +195,7 @@ export default function ActivitiesPage() {
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
                   <Image
                     src="/images/activities/seafood.jpg"
-                    alt={t.items[7]?.title}
+                    alt={t.items[8]?.title}
                     fill
                     className="object-cover"
                   />
@@ -178,10 +205,10 @@ export default function ActivitiesPage() {
                     ★ Featured
                   </span>
                   <h3 className="text-3xl font-display font-bold text-caribe mb-4">
-                    {t.items[7]?.title}
+                    {t.items[8]?.title}
                   </h3>
                   <p className="text-lg text-oscuro leading-relaxed">
-                    {t.items[7]?.description}
+                    {t.items[8]?.description}
                   </p>
                 </div>
               </div>
