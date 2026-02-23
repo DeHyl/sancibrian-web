@@ -244,12 +244,14 @@
     "intro": "Desde caminatas por la selva hasta snorkeling en aguas cristalinas, Sapzurro ofrece experiencias inolvidables para todo tipo de viajero.",
     "signatureTitle": "Experiencias Destacadas",
     "items": [
-      { "title": "Snorkeling y Buceo", "description": "Explora arrecifes de coral vibrantes y peces tropicales en aguas cristalinas." },
+      { "title": "Snorkeling y Buceo en Cabo Tiburón", "description": "Explora arrecifes de coral vibrantes en Cabo Tiburón — la primera playa del continente sudamericano. Aguas cristalinas del Caribe con una vida marina impresionante." },
       { "title": "Caminata a La Miel", "description": "Sendero de 20 minutos por la selva hasta una playa prístina panameña. No necesitas pasaporte — solo tu cédula para registrarte en el puesto fronterizo." },
-      { "title": "Kayak", "description": "Rema a lo largo de la costa y descubre calas escondidas." },
-      { "title": "Avistamiento de Aves", "description": "Observa especies exóticas en la rica biodiversidad del Darién." },
+      { "title": "Kayak", "description": "Rema a lo largo de la costa y descubre calas escondidas en las aguas turquesas del Caribe." },
+      { "title": "Avistamiento de Aves", "description": "Observa especies exóticas — tucanes, loros y aves endémicas — en la rica biodiversidad del Darién." },
       { "title": "Pesca Deportiva", "description": "Prueba tu suerte con pescadores locales en las aguas del Caribe." },
-      { "title": "Simplemente Relájate", "description": "Hamaca, libro y el sonido de las olas. Pura felicidad." }
+      { "title": "Simplemente Relájate", "description": "Hamaca, libro y el sonido de las olas. Pura felicidad." },
+      { "title": "Trekking a Capurganá", "description": "Sigue el sendero selvático que conecta Sapzurro con el pintoresco pueblo de Capurganá (~2 horas a pie). Selva tropical densa, vistas costeras y pura aventura." },
+      { "title": "Gastronomía Local", "description": "Disfruta los frutos del mar frescos en Cabaña Cangrejales y restaurantes locales. Desde cazuela de mariscos hasta pescado entero a la brasa — los sabores de la costa del Darién." }
     ],
     "startAdventure": "Comienza Tu Aventura",
     "startAdventureDesc": "Podemos ayudarte a organizar actividades, tours y guías locales.",

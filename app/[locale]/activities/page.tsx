@@ -6,6 +6,18 @@ import Link from "next/link";
 import { CONTACT } from "@/lib/constants";
 import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
+// Image mapping for each activity index
+const ACTIVITY_IMAGES: Record<number, string> = {
+  0: "/images/activities/snorkeling-cabo-tiburon.jpg", // Snorkeling at Cabo Tiburón
+  1: "/images/sapzurro/path.jpg",                      // Hike to La Miel
+  2: "/images/activities/kayaking.jpg",                 // Kayaking
+  3: "/images/activities/birdwatching.jpg",             // Bird Watching
+  4: "/images/sapzurro/dock.jpg",                       // Sport Fishing
+  5: "/images/sapzurro/playa-bonita-swing.jpg",         // Simply Relax
+  6: "/images/activities/jungle-trek.jpg",              // Trek to Capurganá
+  7: "/images/activities/seafood.jpg",                  // Local Gastronomy
+};
+
 export default function ActivitiesPage() {
   const { dict, locale } = useDictionary();
   const t = dict.activities;
@@ -16,7 +28,7 @@ export default function ActivitiesPage() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/sapzurro/beach-2.jpg"
+            src="/images/activities/person-coral.jpg"
             alt={t.heroTitle}
             fill
             className="object-cover"
@@ -59,32 +71,35 @@ export default function ActivitiesPage() {
       {/* Activities Grid */}
       <section className="py-20 bg-arena-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {t.items.map((activity: { title: string; description: string }, index: number) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow"
-                >
-                  <h3 className="text-2xl font-display font-bold text-caribe mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {t.items.map((activity: { title: string; description: string }, index: number) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.07 }}
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow group"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={ACTIVITY_IMAGES[index] ?? "/images/sapzurro/beach-2.jpg"}
+                    alt={activity.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-display font-bold text-caribe mb-2">
                     {activity.title}
                   </h3>
-                  <p className="text-oscuro leading-relaxed">
+                  <p className="text-sm text-oscuro leading-relaxed">
                     {activity.description}
                   </p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -101,48 +116,72 @@ export default function ActivitiesPage() {
               {t.signatureTitle}
             </h2>
 
-            <div className="space-y-12">
-              {/* La Miel Hike */}
+            <div className="space-y-16">
+              {/* Cabo Tiburón Snorkeling */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
-                  <Image src="/images/sapzurro/path.jpg" alt="Hike to La Miel" fill className="object-cover" />
+                <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/activities/snorkeling-cabo-tiburon.jpg"
+                    alt={t.items[0]?.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-display font-bold text-caribe mb-4">
-                    {t.items[1]?.title}
-                  </h3>
-                  <p className="text-lg text-oscuro mb-4">
-                    {t.items[1]?.description}
-                  </p>
-                </div>
-              </div>
-
-              {/* Snorkeling */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="order-2 lg:order-1">
+                  <span className="inline-block text-sm font-semibold text-coral uppercase tracking-widest mb-3">
+                    ★ Featured
+                  </span>
                   <h3 className="text-3xl font-display font-bold text-caribe mb-4">
                     {t.items[0]?.title}
                   </h3>
-                  <p className="text-lg text-oscuro mb-4">
+                  <p className="text-lg text-oscuro leading-relaxed">
                     {t.items[0]?.description}
                   </p>
                 </div>
-                <div className="relative h-80 rounded-lg overflow-hidden shadow-lg order-1 lg:order-2">
-                  <Image src="/images/sapzurro/beach-3.jpg" alt="Snorkeling" fill className="object-cover" />
+              </div>
+
+              {/* Trek to Capurganá */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="order-2 lg:order-1">
+                  <span className="inline-block text-sm font-semibold text-coral uppercase tracking-widest mb-3">
+                    ★ Featured
+                  </span>
+                  <h3 className="text-3xl font-display font-bold text-caribe mb-4">
+                    {t.items[6]?.title}
+                  </h3>
+                  <p className="text-lg text-oscuro leading-relaxed">
+                    {t.items[6]?.description}
+                  </p>
+                </div>
+                <div className="relative h-96 rounded-xl overflow-hidden shadow-xl order-1 lg:order-2">
+                  <Image
+                    src="/images/activities/jungle-trek.jpg"
+                    alt={t.items[6]?.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
 
-              {/* Kayaking */}
+              {/* Local Gastronomy */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
-                  <Image src="/images/sapzurro/beach-4.jpg" alt="Kayaking" fill className="object-cover" />
+                <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/activities/seafood.jpg"
+                    alt={t.items[7]?.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
+                  <span className="inline-block text-sm font-semibold text-coral uppercase tracking-widest mb-3">
+                    ★ Featured
+                  </span>
                   <h3 className="text-3xl font-display font-bold text-caribe mb-4">
-                    {t.items[2]?.title}
+                    {t.items[7]?.title}
                   </h3>
-                  <p className="text-lg text-oscuro mb-4">
-                    {t.items[2]?.description}
+                  <p className="text-lg text-oscuro leading-relaxed">
+                    {t.items[7]?.description}
                   </p>
                 </div>
               </div>
