@@ -32,7 +32,7 @@
     "sectionDescription": "Where modern amenities meet Caribbean paradise. Everything you need for the perfect remote work retreat.",
     "featured": "Featured",
     "items": [
-      { "title": "24/7 Electricity", "description": "Batx battery backup system. One of the few in the entire region with constant power." },
+      { "title": "24/7 Electricity", "description": "Air conditioning on grid power. Personal fans on BatX battery backup. One of the few in the region with zero interruptions." },
       { "title": "Starlink Internet", "description": "High-speed satellite connection. Perfect for digital nomads and remote work." },
       { "title": "Steps from Playa Bonita", "description": "Direct access to the main beach. Wake up to the sound of waves." },
       { "title": "Outdoor Bath", "description": "Wood-fire heated herbal bath with flowers and plants under the stars — upon request. A truly unique ritual." },
@@ -76,7 +76,8 @@
       "Premium bedding and comfortable mattresses",
       "Vintage aviation art and décor",
       "Hand-curated minibar",
-      "24/7 electricity with battery backup",
+      "Air conditioning (on grid power)",
+      "Personal fans (on BatX battery backup)",
       "Wood-fire herbal bath (upon request)",
       "Beach access"
     ],
@@ -96,7 +97,7 @@
       "includesList": [
         "Access to Hangar Café 24/7",
         "Starlink WiFi",
-        "24/7 electricity (BatX backup)",
+        "AC on grid · fans on BatX backup",
         "Dock pickup on arrival",
         "Pre-trip logistics support via WhatsApp"
       ],
@@ -187,7 +188,7 @@
       },
       {
         "question": "What's included in my stay?",
-        "answer": "Accommodation with Starlink WiFi, 24/7 electricity, premium linens and towels, and access to Hangar Café. The outdoor herbal bath (wood-fire heated, with flowers and relaxing herbs) is available upon prior request. Breakfast and other meals also available upon request."
+        "answer": "Accommodation with Starlink WiFi, 24/7 electricity, air conditioning (on grid power), personal fans (on battery backup), premium linens and towels, and access to Hangar Café. The outdoor herbal bath (wood-fire heated, with flowers and relaxing herbs) is available upon prior request. Breakfast and other meals also available upon request."
       },
       {
         "question": "Is there cell phone signal?",

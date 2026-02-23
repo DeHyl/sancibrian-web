@@ -32,7 +32,7 @@
     "sectionDescription": "Donde las comodidades modernas se encuentran con el paraíso caribeño. Todo lo que necesitas para el retiro perfecto de trabajo remoto.",
     "featured": "Destacado",
     "items": [
-      { "title": "Electricidad 24/7", "description": "Sistema de baterías Batx de respaldo. Uno de los pocos en toda la región con energía constante." },
+      { "title": "Electricidad 24/7", "description": "Aire acondicionado con electricidad del pueblo. Ventiladores personales cuando operan las baterías BatX. Uno de los pocos en la región sin cortes." },
       { "title": "Internet Starlink", "description": "Conexión satelital de alta velocidad. Perfecto para nómadas digitales y trabajo remoto." },
       { "title": "A Pasos de Playa Bonita", "description": "Acceso directo a la playa principal. Despierta con el sonido de las olas." },
       { "title": "Bañera Exterior", "description": "Baño de hierbas relajantes y flores calentado a fuego de leña bajo las estrellas — con previa solicitud. Un ritual verdaderamente único." },
@@ -76,7 +76,8 @@
       "Ropa de cama premium y colchones cómodos",
       "Arte y decoración de aviación vintage",
       "Minibar curado a mano",
-      "Electricidad 24/7 con baterías de respaldo",
+      "Aire acondicionado (con electricidad del pueblo)",
+      "Ventiladores personales (con baterías BatX de respaldo)",
       "Baño de hierbas y flores a fuego de leña (previa solicitud)",
       "Acceso a la playa"
     ],
@@ -96,7 +97,7 @@
       "includesList": [
         "Acceso al Hangar Café 24/7",
         "WiFi Starlink",
-        "Electricidad 24/7 (respaldo BatX)",
+        "AC con red · ventiladores con BatX de respaldo",
         "Recogida en el muelle al llegar",
         "Apoyo logístico pre-viaje por WhatsApp"
       ],
@@ -187,7 +188,7 @@
       },
       {
         "question": "¿Qué incluye mi estadía?",
-        "answer": "Alojamiento con WiFi Starlink, electricidad 24/7, ropa de cama y toallas premium, y acceso al Hangar Café. El baño exterior de hierbas y flores (agua calentada a fuego de leña con una infusión de plantas relajantes) está disponible con previa solicitud. Desayuno y otras comidas también disponibles bajo pedido."
+        "answer": "Alojamiento con WiFi Starlink, electricidad 24/7, aire acondicionado (con electricidad del pueblo), ventiladores personales (con baterías de respaldo), ropa de cama y toallas premium, y acceso al Hangar Café. El baño exterior de hierbas y flores (agua calentada a fuego de leña con una infusión de plantas relajantes) está disponible con previa solicitud. Desayuno y otras comidas también disponibles bajo pedido."
       },
       {
         "question": "¿Hay señal de celular?",
