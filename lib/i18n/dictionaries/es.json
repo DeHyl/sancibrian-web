@@ -158,22 +158,16 @@
     "description": "Experiencias reales de viajeros que han descubierto su propio paraíso en Cabaña Sancibrian.",
     "items": [
       {
-        "name": "Sarah Johnson",
-        "location": "Nueva York, EE.UU.",
-        "text": "¡El paraíso perfecto para trabajo remoto! Starlink fue más rápido que mi WiFi en casa. Despertar con vistas al mar y trabajar desde el Hangar Café fue un sueño.",
-        "platform": "Airbnb"
-      },
-      {
-        "name": "Carlos Ramírez",
-        "location": "Bogotá, Colombia",
-        "text": "Un lugar mágico. La atención es excepcional y tener electricidad 24/7 marca la diferencia. ¡La bañera bajo las estrellas es inolvidable!",
+        "name": "Raul",
+        "location": "Colombia",
+        "text": "El lugar es increíble — no hay una acomodación como esta en Sapzurro. Muy cómoda, con todo lo necesario y el servicio es muy bueno. ¡Muy recomendado!",
         "platform": "Booking.com"
       },
       {
-        "name": "Emma & Tom",
-        "location": "Londres, Reino Unido",
-        "text": "Increíble escala en nuestro viaje en velero desde San Blas a Cartagena. La cabaña es hermosa, la comida increíble, ¡y la temática de aviación es súper única!",
-        "platform": "TripAdvisor"
+        "name": "Montoya",
+        "location": "México",
+        "text": "Muy agradable, cómodo, tranquilo y en una excelente ubicación. El señor que atiende todo es muy profesional. ¡100% recomendado!",
+        "platform": "Booking.com"
       }
     ],
     "via": "vía"
