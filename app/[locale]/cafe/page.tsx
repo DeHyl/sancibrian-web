@@ -16,7 +16,7 @@ export default function CafePage() {
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/cafe/exterior-1.avif"
+            src="/images/cafe/hangar-cafe-patio.png"
             alt="Hangar Café"
             fill
             className="object-cover"

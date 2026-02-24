@@ -70,12 +70,12 @@ export const CABIN_IMAGES = [
 ];
 
 export const CAFE_IMAGES = {
-  image: "/images/cafe/exterior-1.avif",
+  image: "/images/cafe/hangar-cafe-patio.png",
   images: [
-    "/images/cafe/exterior-1.avif",
-    "/images/cafe/exterior-2.avif",
+    "/images/cafe/hangar-cafe-patio.png",
+    "/images/cafe/hangar-cafe-coworking.png",
+    "/images/cafe/hangar-cafe-exterior.png",
     "/images/cafe/coffee.jpg",
-    "/images/food/tropical-dish.jpg",
   ],
 };
 

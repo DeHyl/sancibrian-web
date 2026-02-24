@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     url: `${SITE_CONFIG.url}/cafe`,
     images: [
       {
-        url: "/images/cafe/interior-1.jpg",
+        url: "/images/cafe/hangar-cafe-coworking.png",
         width: 1200,
         height: 630,
-        alt: "Hangar Café interior",
+        alt: "Hangar Café coworking space",
       },
     ],
   },
