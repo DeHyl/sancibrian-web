@@ -76,28 +76,16 @@ export default function Header() {
             ))}
 
             {/* Language Toggle */}
-            <div className="flex items-center gap-1">
-              <Link
-                href={switchLocalePath}
-                className={`font-medium text-sm px-3 py-1 rounded-full border transition-colors ${
-                  isScrolled
-                    ? "border-caribe text-caribe hover:bg-caribe hover:text-perla"
-                    : "border-perla text-perla hover:bg-perla/20"
-                }`}
-              >
-                {otherLocale.toUpperCase()}
-              </Link>
-              <Link
-                href="/fr"
-                className={`font-medium text-sm px-3 py-1 rounded-full border transition-colors ${
-                  isScrolled
-                    ? "border-caribe text-caribe hover:bg-caribe hover:text-perla"
-                    : "border-perla text-perla hover:bg-perla/20"
-                }`}
-              >
-                FR
-              </Link>
-            </div>
+            <Link
+              href={switchLocalePath}
+              className={`font-medium text-sm px-3 py-1 rounded-full border transition-colors ${
+                isScrolled
+                  ? "border-caribe text-caribe hover:bg-caribe hover:text-perla"
+                  : "border-perla text-perla hover:bg-perla/20"
+              }`}
+            >
+              {otherLocale.toUpperCase()}
+            </Link>
 
             <Link
               href={`/${locale}/contact`}
@@ -161,13 +149,6 @@ export default function Header() {
                   className="block text-caribe hover:text-bronze font-medium py-2"
                 >
                   {otherLocale === "en" ? "English" : "Español"}
-                </Link>
-                <Link
-                  href="/fr"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-caribe hover:text-bronze font-medium py-2"
-                >
-                  Français
                 </Link>
                 <Link
                   href={`/${locale}/contact`}
