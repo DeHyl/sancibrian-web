@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
