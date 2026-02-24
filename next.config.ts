@@ -12,10 +12,12 @@ const nextConfig: NextConfig = {
     ],
     formats: ["image/avif", "image/webp"],
   },
-  // Optimizaciones para mejor performance
-  // experimental: {
-  //   optimizeCss: true, // Deshabilitado temporalmente
-  // },
+  async redirects() {
+    return [
+      { source: "/en/fr", destination: "/fr", permanent: false },
+      { source: "/es/fr", destination: "/fr", permanent: false },
+    ];
+  },
 };
 
 export default nextConfig;
