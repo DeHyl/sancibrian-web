@@ -63,7 +63,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-5">
-            {navItems.slice(0, -1).map((item) => (
+            {navItems.slice(1).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -133,7 +133,7 @@ export default function Header() {
               className="lg:hidden bg-perla rounded-b-2xl shadow-xl overflow-hidden"
             >
               <div className="px-4 py-6 space-y-4">
-                {navItems.map((item) => (
+                {navItems.slice(1).map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
