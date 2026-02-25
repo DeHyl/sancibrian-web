@@ -283,10 +283,10 @@
         "duration": "Variable"
       },
       {
-        "from": "Turbo",
-        "steps": ["Go to the maritime terminal in Turbo", "Speedboat to Sapzurro (direct, ~2h)", "Boats depart daily in the morning"],
-        "duration": "~2 hours",
-        "note": "Turbo is an alternative departure point to Necoclí. Multiple boat companies operate daily routes."
+        "from": "Necoclí / Turbo",
+        "steps": ["Head to the Necoclí or Turbo dock", "el Caribe SAS speedboat: Necoclí → Capurganá → Sapzurro (1.5–2h)", "Boats depart daily in the morning (~8:00 AM)"],
+        "duration": "~1.5–2 hours",
+        "note": "Main operator: el Caribe SAS. Route: Necoclí → Capurganá → Sapzurro. Arrive at the dock 30 min early — seats sell out fast in high season."
       },
       {
         "from": "San Blas Islands (Panama)",

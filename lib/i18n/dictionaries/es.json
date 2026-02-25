@@ -283,10 +283,10 @@
         "duration": "Variable"
       },
       {
-        "from": "Turbo",
-        "steps": ["Ir al terminal marítimo de Turbo", "Lancha rápida a Sapzurro (directo, ~2h)", "Salen lanchas diariamente en la mañana"],
-        "duration": "~2 horas",
-        "note": "Turbo es un punto de partida alternativo a Necoclí. Varias empresas de lanchas operan rutas diarias."
+        "from": "Necoclí / Turbo",
+        "steps": ["Ir al muelle de Necoclí o Turbo", "Lancha el Caribe SAS: Necoclí → Capurganá → Sapzurro (1.5–2h)", "Salen lanchas diariamente en la mañana (8:00 AM aprox.)"],
+        "duration": "~1.5–2 horas",
+        "note": "Operador principal: el Caribe SAS. Ruta Necoclí → Capurganá → Sapzurro. Llega al muelle 30 min antes — los cupos se agotan rápido en temporada alta."
       },
       {
         "from": "Islas de San Blas (Panamá)",
