@@ -169,6 +169,16 @@ export default function Footer() {
           <p className="mt-2 text-xs">
             {dict.footer.inLovingMemory}
           </p>
+          <p className="mt-3 text-xs">
+            <Link
+              href={`/${locale}/privacy`}
+              className="hover:text-bronze transition-colors underline underline-offset-2"
+            >
+              {locale === "es" ? "Política de Tratamiento de Datos" : "Privacy & Data Policy"}
+            </Link>
+            {" · "}
+            <span>Dehyl SAS — NIT 901.563.857-9</span>
+          </p>
         </div>
       </div>
     </footer>
