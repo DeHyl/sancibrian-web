@@ -14,9 +14,9 @@ const ACTIVITY_IMAGES: Record<number, string> = {
   3: "/images/activities/kayaking.jpg",                  // Kayaking
   4: "/images/activities/birdwatching.jpg",              // Bird Watching
   5: "/images/sapzurro/dock.jpg",                        // Sport Fishing
-  6: "/images/sapzurro/playa-bonita-swing.jpg",          // Simply Relax
-  7: "/images/activities/jungle-trek.jpg",               // Trek to Capurganá
-  8: "/images/activities/seafood.jpg",                   // Local Gastronomy
+  6: "/images/activities/jungle-trek.jpg",               // Trek to Capurganá
+  7: "/images/activities/seafood.jpg",                   // Local Gastronomy
+  8: "/images/sapzurro/playa-bonita-swing.jpg",          // Simply Relax
 };
 
 export default function ActivitiesPage() {
@@ -174,16 +174,16 @@ export default function ActivitiesPage() {
                     ★ Featured
                   </span>
                   <h3 className="text-3xl font-display font-bold text-caribe mb-4">
-                    {t.items[7]?.title}
+                    {t.items[6]?.title}
                   </h3>
                   <p className="text-lg text-oscuro leading-relaxed">
-                    {t.items[7]?.description}
+                    {t.items[6]?.description}
                   </p>
                 </div>
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl order-1 lg:order-2">
                   <Image
                     src="/images/activities/jungle-trek.jpg"
-                    alt={t.items[7]?.title}
+                    alt={t.items[6]?.title}
                     fill
                     className="object-cover"
                   />
@@ -195,7 +195,7 @@ export default function ActivitiesPage() {
                 <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
                   <Image
                     src="/images/activities/seafood.jpg"
-                    alt={t.items[8]?.title}
+                    alt={t.items[7]?.title}
                     fill
                     className="object-cover"
                   />
@@ -205,10 +205,10 @@ export default function ActivitiesPage() {
                     ★ Featured
                   </span>
                   <h3 className="text-3xl font-display font-bold text-caribe mb-4">
-                    {t.items[8]?.title}
+                    {t.items[7]?.title}
                   </h3>
                   <p className="text-lg text-oscuro leading-relaxed">
-                    {t.items[8]?.description}
+                    {t.items[7]?.description}
                   </p>
                 </div>
               </div>
