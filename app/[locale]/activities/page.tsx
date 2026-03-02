@@ -11,7 +11,7 @@ const ACTIVITY_IMAGES: Record<number, string> = {
   0: "/images/activities/san-blas-islands.jpg",         // San Blas Islands Expedition
   1: "/images/activities/snorkeling-cabo-tiburon.jpg",  // Snorkeling at Cabo Tiburón
   2: "/images/sapzurro/path.jpg",                       // Hike to La Miel
-  3: "/images/activities/kayaking.jpg",                  // Kayaking
+  3: "/images/activities/kayaking.avif",                 // Kayaking
   4: "/images/activities/birdwatching.jpg",              // Bird Watching
   5: "/images/sapzurro/dock.jpg",                        // Sport Fishing
   6: "/images/activities/jungle-trek.jpg",               // Trek to Capurganá
