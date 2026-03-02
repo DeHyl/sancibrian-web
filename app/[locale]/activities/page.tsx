@@ -10,7 +10,7 @@ import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 const ACTIVITY_IMAGES: Record<number, string> = {
   0: "/images/activities/san-blas-islands.jpg",         // San Blas Islands Expedition
   1: "/images/activities/snorkeling-cabo-tiburon.jpg",  // Snorkeling at Cabo Tiburón
-  2: "/images/sapzurro/path.jpg",                       // Hike to La Miel
+  2: "/images/activities/la-miel-panama.webp",           // Hike to La Miel
   3: "/images/activities/kayaking.avif",                 // Kayaking
   4: "/images/activities/birdwatching.jpg",              // Bird Watching
   5: "/images/sapzurro/dock.jpg",                        // Sport Fishing
