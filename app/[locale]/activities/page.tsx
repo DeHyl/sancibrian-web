@@ -16,7 +16,8 @@ const ACTIVITY_IMAGES: Record<number, string> = {
   5: "/images/sapzurro/dock.jpg",                        // Sport Fishing
   6: "/images/activities/jungle-trek.jpg",               // Trek to Capurganá
   7: "/images/activities/seafood.jpg",                   // Local Gastronomy
-  8: "/images/sapzurro/playa-bonita-swing.jpg",          // Simply Relax
+  8: "/images/activities/playa-soledad-capurgana.jpg",   // Visit Capurganá, Playa Soledad & El Aguacate
+  9: "/images/sapzurro/playa-bonita-swing.jpg",          // Simply Relax
 };
 
 export default function ActivitiesPage() {
