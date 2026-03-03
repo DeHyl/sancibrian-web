@@ -268,10 +268,16 @@
         "duration": "~5-6 horas en total (por aire)"
       },
       {
+        "from": "Medellín → Capurganá directo (Clic Air)",
+        "steps": ["Vuelo directo Medellín (Olaya Herrera) → Capurganá, Las Brujas (50-55 min) con Clic Air", "Lancha Capurganá → Sapzurro (15 min)"],
+        "duration": "~1.5 horas en total",
+        "note": "🆕 Desde nov. 2025: la ruta más directa. Tiquetes vía clic-air.com o agencias autorizadas. Sale de Olaya Herrera — sin ir a Rionegro."
+      },
+      {
         "from": "Medellín (vía Acandí)",
-        "steps": ["Vuelo al aeropuerto de Acandí (1h)", "Lancha de Acandí a Sapzurro (30-40 min)"],
-        "duration": "~2-3 horas en total",
-        "note": "¡Ruta más rápida! Horarios de vuelo limitados, consulta disponibilidad con anticipación"
+        "steps": ["Vuelo al aeropuerto de Acandí (1h) con Satena, SEARCA* o Moon Flights", "Taxi/moto al muelle de Capurganá (15 min)", "Lancha Capurganá → Sapzurro (15 min)"],
+        "duration": "~2.5 horas en total",
+        "note": "Ruta más frecuente. *SEARCA opera los aviones pero los tiquetes se compran en Nautilos o San Germán Express (no venden directo). Confirma vuelo 24h antes."
       },
       {
         "from": "Bogotá",

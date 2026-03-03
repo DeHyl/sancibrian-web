@@ -268,10 +268,16 @@
         "duration": "~5-6 hours total (by air)"
       },
       {
+        "from": "Medellín → Capurganá direct (Clic Air)",
+        "steps": ["Direct flight Medellín (Olaya Herrera) → Capurganá, Las Brujas (50-55 min) with Clic Air", "Boat Capurganá → Sapzurro (15 min)"],
+        "duration": "~1.5 hours total",
+        "note": "🆕 Since Nov. 2025: the most direct route. Book at clic-air.com or authorized agencies. Departs from Olaya Herrera — no trip to Rionegro needed."
+      },
+      {
         "from": "Medellín (via Acandí)",
-        "steps": ["Flight to Acandí airport (1h)", "Boat from Acandí to Sapzurro (30-40 min)"],
-        "duration": "~2-3 hours total",
-        "note": "Fastest route! Limited flight schedules, check availability in advance"
+        "steps": ["Flight to Acandí airport (1h) with Satena, SEARCA* or Moon Flights", "Taxi/moto to Capurganá dock (15 min)", "Boat Capurganá → Sapzurro (15 min)"],
+        "duration": "~2.5 hours total",
+        "note": "Most frequent route. *SEARCA operates the aircraft but tickets are sold by Nautilos or San Germán Express (not directly by SEARCA). Always confirm flight 24h ahead."
       },
       {
         "from": "Bogotá",
