@@ -93,6 +93,8 @@ export const CABIN_IMAGES = [
   { url: "/images/cabin/breakfast-1.jpg", alt: "Breakfast at Hangar Café" },
   { url: "/images/cabin/breakfast-2.jpg", alt: "Morning breakfast" },
   { url: "/images/cabin/breakfast-3.jpg", alt: "Colombian breakfast" },
+  { url: "/images/cabin/breakfast-4.jpg", alt: "Arepa with fried egg and fruit" },
+  { url: "/images/cabin/breakfast-5.jpg", alt: "Arepa with scrambled eggs and fruit" },
   // Other
   { url: "/images/cabin/room-7.jpg", alt: "Additional room with loft" },
   { url: "/images/cabin/cabin-night.jpg", alt: "Cabaña Sancibrian at night" },
