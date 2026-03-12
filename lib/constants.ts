@@ -75,10 +75,8 @@ export const CABIN_IMAGES = [
   { url: "/images/cabin/room-tv.jpg", alt: "The Captain's Cabin — propeller and TV wall" },
   { url: "/images/cabin/room-propeller.jpg", alt: "The Captain's Cabin — room with aviation decor" },
   // Facade shots — all angles
-  { url: "/images/cabin/facade-new-1.jpg", alt: "Cabaña Sancibrian — tropical garden" },
   { url: "/images/cabin/facade-new-2.jpg", alt: "Cabaña Sancibrian — side view" },
   { url: "/images/cabin/facade-green.jpg", alt: "Cabaña Sancibrian — green wall and tropical porch" },
-  { url: "/images/cabin/facade-new-3.jpg", alt: "Cabaña Sancibrian — front entrance" },
   { url: "/images/cabin/facade-wide.jpg", alt: "Cabaña Sancibrian — wide view with jungle backdrop" },
   { url: "/images/cabin/facade-angle.jpg", alt: "Cabaña Sancibrian — architectural angle" },
   { url: "/images/cabin/facade-sunset.jpg", alt: "Cabaña Sancibrian at golden hour" },
