@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Cabaña Sancibrian | Hospedaje Premium en Sapzurro, Colombia",
-    "description": "Hospedaje premium frente al mar en Sapzurro, Colombia. WiFi Starlink, electricidad 24/7 y Hangar Café coworking — a pasos de la playa. La base caribeña perfecta para nómadas digitales."
+    "description": "Hospedaje premium a pocos pasos de Playa Bonita en Sapzurro, Colombia. WiFi Starlink, electricidad 24/7 y Hangar Café coworking. La base caribeña perfecta para nómadas digitales."
   },
   "nav": {
     "home": "Inicio",
@@ -24,8 +24,8 @@
   "captainStory": {
     "title": "Un Tributo al Capitán Diego Domínguez Escobar",
     "subtitle": "Donde el Legado de la Aviación se Encuentra con el Paraíso Caribeño",
-    "story": "Cabaña Sancibrian honra la vida y el legado del Capitán Diego Domínguez Escobar, cuyo espíritu de aventura y exploración vive en cada rincón de este refugio frente al mar. Desde hélices vintage hasta pósters clásicos de aviación, la cabaña celebra la era dorada del vuelo mientras ofrece comodidades modernas en uno de los destinos más prístinos de Colombia.",
-    "quote": "\"La aventura vale la pena en sí misma.\" - Amelia Earhart"
+    "story": "Cabaña Sancibrian honra la vida y el legado del Capitán Diego Domínguez Escobar, cuyo espíritu de aventura y exploración vive en cada rincón de este refugio a pocos pasos de Playa Bonita. Desde hélices vintage hasta pósters clásicos de aviación, la cabaña celebra la era dorada del vuelo mientras ofrece comodidades modernas en uno de los destinos más prístinos de Colombia.",
+    "quote": "\"El avión nos ha revelado el verdadero rostro de la tierra. Durante siglos, los caminos nos engañaron.\" — Antoine de Saint-Exupéry, Tierra de Hombres"
   },
   "features": {
     "sectionTitle": "La Experiencia Sancibrian",
@@ -34,7 +34,7 @@
     "items": [
       { "title": "Electricidad 24/7", "description": "Aire acondicionado con electricidad del pueblo. Ventiladores personales cuando operan las baterías BatX. Uno de los pocos en la región sin cortes." },
       { "title": "Internet Starlink", "description": "Conexión satelital de alta velocidad. Perfecto para nómadas digitales y trabajo remoto." },
-      { "title": "A Pasos de Playa Bonita", "description": "Acceso directo a la playa principal. Despierta con el sonido de las olas." },
+      { "title": "A Pasos de Playa Bonita", "description": "A pocos pasos de la playa principal de Sapzurro, en la parte posterior de la orilla. Despierta con el sonido de las olas." },
       { "title": "Bañera Exterior", "description": "Baño de hierbas relajantes y flores calentado a fuego de leña bajo las estrellas — con previa solicitud. Un ritual verdaderamente único." },
       { "title": "Temática de Aviación", "description": "Arte y decoración vintage en tributo al legado del Capitán Diego." },
       { "title": "Hangar Café", "description": "Café colombiano y espacio de coworking en la propiedad, disponible 24/7." },
@@ -347,7 +347,7 @@
     "whatsappMessage": "¡Hola! Me gustaría saber más sobre disponibilidad y tarifas en Cabaña Sancibrian."
   },
   "footer": {
-    "tagline": "Tu oasis en el cruce de continentes. Alojamiento premium frente al mar en Sapzurro, Colombia.",
+    "tagline": "Tu oasis en el cruce de continentes. Alojamiento premium a pocos pasos de Playa Bonita en Sapzurro, Colombia.",
     "quickLinks": "Enlaces Rápidos",
     "contact": "Contacto",
     "bookYourStay": "Reserva Tu Estadía",

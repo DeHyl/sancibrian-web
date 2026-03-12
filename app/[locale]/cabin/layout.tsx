@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: [
     "Sapzurro accommodation",
     "Captain's Cabin Sapzurro",
-    "beachfront accommodation Sapzurro",
+    "accommodation steps from beach Sapzurro",
     "hospedaje Sapzurro Colombia",
     "alojamiento Sapzurro frente al mar",
     "digital nomad Caribbean Colombia",

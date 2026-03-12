@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Cabaña Sancibrian | Premium Accommodation in Sapzurro, Colombia",
-    "description": "Premium beachfront accommodation in Sapzurro, Colombia. Starlink WiFi, 24/7 electricity & Hangar Café coworking — steps from the beach. The Caribbean base for digital nomads & adventurers."
+    "description": "Premium accommodation steps from the beach in Sapzurro, Colombia. Starlink WiFi, 24/7 electricity & Hangar Café coworking — behind Playa Bonita. The Caribbean base for digital nomads & adventurers."
   },
   "nav": {
     "home": "Home",
@@ -24,8 +24,8 @@
   "captainStory": {
     "title": "A Tribute to Captain Diego Domínguez Escobar",
     "subtitle": "Where Aviation Legacy Meets Caribbean Paradise",
-    "story": "Cabaña Sancibrian honors the life and legacy of Captain Diego Domínguez Escobar, whose spirit of adventure and exploration lives on in every corner of this beachfront retreat. From vintage propellers to classic aviation posters, the cabin celebrates the golden age of flight while offering modern comforts in one of Colombia's most pristine destinations.",
-    "quote": "\"Adventure is worthwhile in itself.\" - Amelia Earhart"
+    "story": "Cabaña Sancibrian honors the life and legacy of Captain Diego Domínguez Escobar, whose spirit of adventure and exploration lives on in every corner of this retreat steps from the beach. From vintage propellers to classic aviation posters, the cabin celebrates the golden age of flight while offering modern comforts in one of Colombia's most pristine destinations.",
+    "quote": "\"The airplane has unveiled for us the true face of the earth. For centuries, roads deceived us.\" — Antoine de Saint-Exupéry, Wind, Sand and Stars"
   },
   "features": {
     "sectionTitle": "The Sancibrian Experience",
@@ -34,7 +34,7 @@
     "items": [
       { "title": "24/7 Electricity", "description": "Air conditioning on grid power. Personal fans on BatX battery backup. One of the few in the region with zero interruptions." },
       { "title": "Starlink Internet", "description": "High-speed satellite connection. Perfect for digital nomads and remote work." },
-      { "title": "Steps from Playa Bonita", "description": "Direct access to the main beach. Wake up to the sound of waves." },
+      { "title": "Steps from Playa Bonita", "description": "Just a few steps from Sapzurro's main beach, tucked behind the shore. Wake up to the sound of waves." },
       { "title": "Outdoor Bath", "description": "Wood-fire heated herbal bath with flowers and plants under the stars — upon request. A truly unique ritual." },
       { "title": "Aviation Theme", "description": "Vintage art and décor paying tribute to Captain Diego's legacy." },
       { "title": "Hangar Café", "description": "Colombian coffee and coworking space on property, available 24/7." },
@@ -347,7 +347,7 @@
     "whatsappMessage": "Hi! I'd like to know more about availability and rates at Cabaña Sancibrian."
   },
   "footer": {
-    "tagline": "Your oasis at the crossroads of continents. Premium beachfront accommodation in Sapzurro, Colombia.",
+    "tagline": "Your oasis at the crossroads of continents. Premium accommodation steps from Playa Bonita in Sapzurro, Colombia.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "bookYourStay": "Book Your Stay",

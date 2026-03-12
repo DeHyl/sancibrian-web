@@ -4,6 +4,7 @@ import { SITE_CONFIG, CONTACT } from "@/lib/constants";
 import { locales, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { DictionaryProvider } from "@/lib/i18n/DictionaryProvider";
+import type { LodgingBusinessSchema } from "@/lib/schema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -78,7 +79,7 @@ export default async function LocaleLayout({
 
   const isEs = locale === "es";
 
-  const jsonLd = {
+  const jsonLd: LodgingBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LodgingBusiness",
     name: SITE_CONFIG.name,
@@ -105,8 +106,8 @@ export default async function LocaleLayout({
     },
     hasMap: "https://maps.google.com/?q=8.6614,-77.3636",
     priceRange: "$$",
-    checkinTime: "15:00",
-    checkoutTime: "11:00",
+    checkinTime: "T15:00:00",
+    checkoutTime: "T11:00:00",
     numberOfRooms: 1,
     petsAllowed: false,
     starRating: {
@@ -156,7 +157,7 @@ export default async function LocaleLayout({
       { "@type": "LocationFeatureSpecification", name: "24/7 Electricity (BatX Backup)", value: true },
       { "@type": "LocationFeatureSpecification", name: "Netflix", value: true },
       { "@type": "LocationFeatureSpecification", name: "Amazon Alexa", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Beachfront", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Steps from Playa Bonita (Sapzurro's main beach)", value: true },
       { "@type": "LocationFeatureSpecification", name: "Outdoor Herbal Bathtub", value: true },
       { "@type": "LocationFeatureSpecification", name: "Café & Coworking Space", value: true },
       { "@type": "LocationFeatureSpecification", name: "San Blas Islands Access", value: true },

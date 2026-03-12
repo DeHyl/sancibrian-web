@@ -4,6 +4,7 @@ import { SITE_CONFIG } from "@/lib/constants";
 import { locales, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { getPostBySlug, getAllSlugs } from "@/lib/blog";
+import type { BlogPostingSchema } from "@/lib/schema";
 import BlogPostClient from "./BlogPostClient";
 
 export async function generateStaticParams() {
@@ -68,7 +69,43 @@ export default async function BlogPostPage({
 
   const dict = await getDictionary(locale as Locale);
 
+  const absoluteImage = post.coverImage.startsWith("http")
+    ? post.coverImage
+    : `${SITE_CONFIG.url}${post.coverImage}`;
+
+  const blogSchema: BlogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    image: absoluteImage,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_CONFIG.name,
+      url: SITE_CONFIG.url,
+    },
+    url: `${SITE_CONFIG.url}/${locale}/blog/${slug}`,
+    inLanguage: locale === "es" ? "es-CO" : "en-US",
+    keywords: post.tags,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_CONFIG.url}/${locale}/blog/${slug}`,
+    },
+  };
+
   return (
-    <BlogPostClient post={post} dict={dict.blog} locale={locale} />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
+      <BlogPostClient post={post} dict={dict.blog} locale={locale} />
+    </>
   );
 }
