@@ -49,7 +49,14 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        {/* Capitán DD — chat widget */}
+        <Script
+          src="https://capitan-dd-production.up.railway.app/widget.js"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
