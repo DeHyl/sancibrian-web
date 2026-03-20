@@ -75,6 +75,19 @@ export default function Header() {
               </Link>
             ))}
 
+            {/* Admin Dashboard */}
+            <a
+              href="https://capitan-dd-production.up.railway.app/dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Admin"
+              className={`text-sm transition-colors hover:text-bronze ${
+                isScrolled ? "text-oscuro/40 hover:text-bronze" : "text-perla/40 hover:text-perla"
+              }`}
+            >
+              🛩️
+            </a>
+
             {/* Language Toggle */}
             <Link
               href={switchLocalePath}
@@ -143,6 +156,15 @@ export default function Header() {
                     {item.name}
                   </Link>
                 ))}
+                <a
+                  href="https://capitan-dd-production.up.railway.app/dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block text-oscuro/40 hover:text-bronze font-medium py-2 text-sm"
+                >
+                  🛩️ Admin
+                </a>
                 <Link
                   href={switchLocalePath}
                   onClick={() => setIsMobileMenuOpen(false)}
