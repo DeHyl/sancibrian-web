@@ -53,8 +53,7 @@ export default function RootLayout({
         {children}
         {/* Capitán DD — chat widget */}
         <Script
-          src="https://capitan-dd-production.up.railway.app/widget.js"
-          data-property-slug="sancibrian"
+          src="https://capitan-dd-production.up.railway.app/widget.js?slug=sancibrian"
           strategy="afterInteractive"
         />
       </body>
