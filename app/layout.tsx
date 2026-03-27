@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { SITE_CONFIG } from "@/lib/constants";
+import WidgetLoader from "@/components/WidgetLoader";
 
 const GA_ID = "G-ZJQ03250Q6";
 
@@ -51,11 +52,8 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
-        {/* Capitán DD — chat widget */}
-        <Script
-          src="https://capitan-dd-production.up.railway.app/widget.js?slug=sancibrian"
-          strategy="afterInteractive"
-        />
+        {/* Capitán DD — chat widget (Client Component for reliable injection in App Router) */}
+        <WidgetLoader />
       </body>
     </html>
   );
