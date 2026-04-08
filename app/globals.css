@@ -57,18 +57,18 @@
   }
 
   .gradient-overlay {
-    @apply absolute inset-0 bg-gradient-to-b from-transparent via-oscuro/30 to-oscuro/70;
+    @apply absolute inset-0 bg-gradient-to-b from-oscuro/40 via-oscuro/50 to-oscuro/75;
   }
 }
 
 /* Utilidades personalizadas */
 @layer utilities {
   .text-shadow {
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.4);
   }
 
   .text-shadow-lg {
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 2px 6px rgba(0, 0, 0, 0.5);
   }
 }
 
