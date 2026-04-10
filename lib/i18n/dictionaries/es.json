@@ -83,25 +83,29 @@
     ],
     "pricing": {
       "title": "Tarifas",
-      "subtitle": "Todas las tarifas son por persona, por noche. Mínimo 2 huéspedes.",
+      "subtitle": "Todas las tarifas son por persona, por noche. Minimo 2 huespedes.",
       "highSeason": "Temporada Alta",
+      "midSeason": "Temporada Media",
       "lowSeason": "Temporada Baja",
-      "highSeasonDates": "Dic – Abr · Jul – Ago",
-      "lowSeasonDates": "May – Jun · Sep – Nov",
+      "highSeasonDates": "Dic · Ene · Feb · Jul · Ago",
+      "midSeasonDates": "Mar · Abr · Nov",
+      "lowSeasonDates": "May · Jun · Sep · Oct",
       "highSeasonPrice": "$149,900",
+      "midSeasonPrice": "$124,900",
       "lowSeasonPrice": "$99,900",
       "currency": "COP / persona / noche",
       "highSeasonUSD": "≈ USD $37",
+      "midSeasonUSD": "≈ USD $31",
       "lowSeasonUSD": "≈ USD $25",
       "includes": "Cada tarifa incluye:",
       "includesList": [
-        "Acceso al Hangar Café 24/7",
+        "Acceso al Hangar Cafe 24/7",
         "WiFi Starlink",
         "AC con red · ventiladores con BatX de respaldo",
         "Recogida en el muelle al llegar",
-        "Apoyo logístico pre-viaje por WhatsApp"
+        "Apoyo logistico pre-viaje por WhatsApp"
       ],
-      "note": "Las tarifas pueden variar en Airbnb y Booking.com. Para la mejor tarifa, contáctanos directamente.",
+      "note": "Las tarifas pueden variar en Airbnb y Booking.com. Para la mejor tarifa, contactanos directamente.",
       "bookDirect": "Reserva Directa (Mejor Tarifa)"
     }
   },

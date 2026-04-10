@@ -190,11 +190,11 @@ export default function CabinPage() {
             <p className="text-center text-perla/70 mb-12">{t.pricing.subtitle}</p>
 
             {/* Season cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {/* High Season */}
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8"
@@ -206,19 +206,41 @@ export default function CabinPage() {
                     <div className="text-sm text-perla/60">{t.pricing.highSeasonDates}</div>
                   </div>
                 </div>
-                <div className="text-5xl font-display font-bold text-bronze mb-1">
+                <div className="text-4xl md:text-5xl font-display font-bold text-bronze mb-1">
                   {t.pricing.highSeasonPrice}
                 </div>
                 <div className="text-sm text-perla/70 mb-1">{t.pricing.currency}</div>
                 <div className="text-sm text-perla/50">{t.pricing.highSeasonUSD}</div>
               </motion.div>
 
-              {/* Low Season */}
+              {/* Mid Season */}
               <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
+                className="bg-white/10 backdrop-blur-sm border border-amber-400/30 rounded-2xl p-8"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-2xl">🌤️</span>
+                  <div>
+                    <div className="text-lg font-bold text-perla">{t.pricing.midSeason}</div>
+                    <div className="text-sm text-perla/60">{t.pricing.midSeasonDates}</div>
+                  </div>
+                </div>
+                <div className="text-4xl md:text-5xl font-display font-bold text-amber-400 mb-1">
+                  {t.pricing.midSeasonPrice}
+                </div>
+                <div className="text-sm text-perla/70 mb-1">{t.pricing.currency}</div>
+                <div className="text-sm text-perla/50">{t.pricing.midSeasonUSD}</div>
+              </motion.div>
+
+              {/* Low Season */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
                 className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8"
               >
                 <div className="flex items-center gap-3 mb-4">
@@ -228,7 +250,7 @@ export default function CabinPage() {
                     <div className="text-sm text-perla/60">{t.pricing.lowSeasonDates}</div>
                   </div>
                 </div>
-                <div className="text-5xl font-display font-bold text-arena mb-1">
+                <div className="text-4xl md:text-5xl font-display font-bold text-arena mb-1">
                   {t.pricing.lowSeasonPrice}
                 </div>
                 <div className="text-sm text-perla/70 mb-1">{t.pricing.currency}</div>
