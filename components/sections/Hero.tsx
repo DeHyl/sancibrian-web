@@ -3,12 +3,32 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { HERO_IMAGES, CONTACT } from "@/lib/constants";
 import { useDictionary } from "@/lib/i18n/DictionaryProvider";
 
 export default function Hero() {
   const { dict, locale } = useDictionary();
   const t = dict.hero;
+  const headlines = t.headlines as string[];
+
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setIndex((prev) => {
+          let next;
+          do { next = Math.floor(Math.random() * headlines.length); } while (next === prev);
+          return next;
+        });
+        setVisible(true);
+      }, 600);
+    }, 4500);
+    return () => clearInterval(interval);
+  }, [headlines.length]);
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -56,7 +76,15 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            {t.headline}
+            <span
+              style={{
+                display: "inline-block",
+                transition: "opacity 0.6s ease",
+                opacity: visible ? 1 : 0,
+              }}
+            >
+              {headlines[index]}
+            </span>
           </motion.h1>
 
           <motion.p

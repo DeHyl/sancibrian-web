@@ -15,7 +15,17 @@
     "bookNow": "Reservar"
   },
   "hero": {
-    "headline": "Desconéctate para Reconectarte O No. Tenemos Energía y Starlink 24/7",
+    "headlines": [
+      "Desconéctate. O no. Tú decides.",
+      "Tu oasis en el cruce de dos continentes.",
+      "Sapzurro, donde el mundo se detiene.",
+      "El rincón más remoto de Colombia tiene Starlink.",
+      "Trabaja desde el paraíso. O no trabajes. No juzgamos.",
+      "Selva, mar y 200 Mbps. Todo en el mismo lugar.",
+      "Donde la selva se encuentra con el Caribe.",
+      "Tan lejos de todo, tan cerca de lo que importa.",
+      "El último rincón conectado del mundo."
+    ],
     "subheadline": "Tu Oasis en el Cruce de Continentes",
     "description": "Vive la mezcla perfecta entre trabajo remoto y paraíso tropical en Sapzurro, la joya escondida de Colombia.",
     "cta": "Reserva Tu Estadía",

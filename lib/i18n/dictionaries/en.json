@@ -15,7 +15,17 @@
     "bookNow": "Book Now"
   },
   "hero": {
-    "headline": "Disconnect to Reconnect Or Don't. We Have Power & Starlink 24/7",
+    "headlines": [
+      "Unplug. Or don't. You choose.",
+      "Your oasis between two continents.",
+      "Sapzurro, where the world slows down.",
+      "The most remote corner of Colombia has Starlink.",
+      "Work from paradise. Or don't. We're not judging.",
+      "Jungle, sea, and 200 Mbps. All in one place.",
+      "Where the jungle meets the Caribbean.",
+      "Far from everything, close to what matters.",
+      "The last connected corner of the world."
+    ],
     "subheadline": "Your Oasis at the Crossroads of Continents",
     "description": "Experience the perfect blend of remote work and tropical paradise in Sapzurro, Colombia's hidden gem.",
     "cta": "Book Your Stay",
