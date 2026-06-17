@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 
-const WIDGET_URL = 'https://capitan-dd-production.up.railway.app/widget.js?slug=sancibrian';
+const WIDGET_URL = 'https://sancibrian.host-help.com/widget.js?slug=sancibrian';
 
 export default function WidgetLoader() {
   useEffect(() => {
