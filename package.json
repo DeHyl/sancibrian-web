@@ -19,6 +19,9 @@
   ],
   "author": "Cabaña Sancibrian",
   "license": "MIT",
+  "overrides": {
+    "nanoid": ">=3.3.18"
+  },
   "dependencies": {
     "@next/third-parties": "^16.1.6",
     "@types/node": "^25.2.3",
@@ -27,9 +30,9 @@
     "critters": "^0.0.23",
     "framer-motion": "^12.34.0",
     "gray-matter": "^4.0.3",
-    "next": "^16.1.6",
+    "next": "^16.3.1",
     "next-mdx-remote": "^6.0.0",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.26",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "reading-time": "^1.5.0",
