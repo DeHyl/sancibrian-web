@@ -55,9 +55,9 @@
   "cabin": {
     "title": "The Captain's Cabin",
     "subtitle": "Your Home in Paradise",
-    "capacity": "4 adults",
+    "capacity": "6 adults",
     "size": "40m²",
-    "beds": "2 Queen beds",
+    "beds": "2 Queen beds + 2 single sofa beds",
     "capacityLabel": "Maximum Capacity",
     "sizeLabel": "Total Space",
     "bedsLabel": "Sleeping Arrangements",
