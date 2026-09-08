@@ -68,6 +68,7 @@ export default function CabinPage() {
               <div className="text-5xl font-display font-bold text-caribe mb-2">
                 {t.beds}
               </div>
+              <div className="text-oscuro font-medium">{t.bedsNote}</div>
               <div className="text-oscuro font-medium">{t.bedsLabel}</div>
             </div>
           </motion.div>
